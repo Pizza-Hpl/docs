@@ -1,15 +1,48 @@
 module.exports = {
     base:"/docs/",
-    title:'Pizze-Hpl',
+    title:'Pizza-Hpl',
     description:'快速入门前端必备知识点,node,vue,微信小程序,html,css...',
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }],
         ['link', { name: 'author', href: 'Pizze-Hpl' }],
         ['link', { name: 'keywords', href: 'Pizze-Hpl个人博客,快速入门前端必备知识点,node,vue,微信小程序,html,css...' }],
       ],
+// 插件
+    //   plugins:[
+    //     [
+    //         '@vuepress/last-updated',
+    //     {
+    //         transformer:(timestamp)=>{
+    //             return moment(timestamp).format('LLLL')
+    //         }
+    //     }
+    //     ],
+    //     [
+    //         '@vuepress/pwa',{
+    //               serviceWorker: true,
+    //               updatePopup: {
+    //                 message: "已更新内容",
+    //                 buttonText: "刷新"
+    //               }
+    //             }
+    //     ]
+    //   ],
+    plugins:{
+        '@vssue/vuepress-plugin-vssue': {
+            // 设置 `platform` 而不是 `api`
+            platform: 'github-v4',
+      
+            // 其他的 Vssue 配置
+            owner: 'Pizza-Hpl',
+            repo: 'docs',
+            clientId: '01b9442f53375a88196b',
+            clientSecret: '8c3524574e4973e54c4780b4ce65d1b3aa5bcb70',
+          },
+    },
+        // nav栏
     themeConfig: {
         logo: '/assets/img/logo.png',        
-        // nav栏
+
         nav: [{
                 text: '首页',
                 link: '/'

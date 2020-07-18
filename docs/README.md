@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /hero.png
-heroText: Pizze-Hpl
+heroText: Pizza-Hpl
 tagline:  Keep on going never give up.
 actionText: 快速上手 →
 actionLink: /zh/guide/
