@@ -1,2 +1,1 @@
-# docs
-快速入门尖端必备知识点
+# Hello VuePress!
