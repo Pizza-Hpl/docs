@@ -90,14 +90,14 @@ console.log( Number('10') );
 
 
       //1.接收年龄，并转成数值 ---> 如果转换失败，会返回 NaN
-      var usrAge = parseInt(prompt('请输入你女朋友的年龄：'));
+      var usrAge = parseInt(prompt('请输入你的年龄：'));
       console.log(usrAge);
 
       //2.判断 变量中的值 是否为 非数值，如果是，则要求重新输入
       //                                  不是，则退出循环
       while(isNaN(usrAge)){ // while(bool)
-        alert('您输入的年龄格式错误，是不是傻？！！！');
-        usrAge =  parseInt(prompt('请重新输入你女朋友的年龄：'));
+        alert('您输入的年龄格式错误');
+        usrAge =  parseInt(prompt('请重新输入你的年龄：'));
       }
 
       //3.打印年龄
@@ -219,22 +219,22 @@ console.log( Number('10') );
 //循环 是当循环条件 不满足时，就退出循环！！！
       //     过程中 也可以通过 关键字 来实现 退出 整个循环 和 本次循环
 
-      //1.班长 看日本电影学习的故事
+      //1.班长 看学习的故事
       for(var i = 1; i<= 10;i++){
         if(i == 5){
-          console.log('糟糕~~~怎么整部影片都没法看呢？！！！！那这一部就不看了！！');
+          console.log('整部影片都没法看呢？！那这一部就不看了！！');
           continue;// 退出 本次循环
         }
 
         if(i == 9){
-          console.log('满头大汗，体力不支，无法在继续学习，就停止了整个学习过程~~！');
+          console.log('无法在继续学习，就停止了整个学习过程~~！');
           break;
         }
 
-        console.log('班长正在认真的津津有味的学习第【' + i + '】部日本电影~~~');
+        console.log('班长正在认真的学习第【' + i + '】部电影~~~');
       }
 
-      console.log('班长很辛苦，沉沉睡去~~~~！');
+      console.log('不学了');
 ```
 
 ## push向数组添加元素
@@ -520,8 +520,6 @@ arrnum=777,11,5,2
       函数名();
     
     */
-
-    //1.模拟 正规按摩店 的业务服务过程
     // 声明函数 daBaoJian 
     // 函数形参： 
     //        位置：放在 方法名 后的 小括号里！！！ 
@@ -529,13 +527,11 @@ arrnum=777,11,5,2
     //        语法：直接 放一个 形参 名，放到小括号中！！！ ---- 本质上，就是 声明了一个变量，只不过没有使用 var关键字！
     function daBaoJian(jiShiNo, yinLiao, clienName) { // 相当于： var jiShiNo;
 
-      console.log(clienName + '就决定 去 四楼 正规按摩店 按摩~~~');
-      console.log('进门后，先要选择正规按摩服务的技师：' + jiShiNo + '号');
-      console.log('进入专用按摩房，天黑请闭眼~~~~');
-      console.log('按摩过程很开心~~~~~');
-      console.log('1个小时过去了，正规按摩服务结束~~~' + clienName + '付清了费用：1800元');
-      console.log(jiShiNo + '号技师 递给' + clienName + ' 一杯' + yinLiao + '，降降火~~~~');
-      console.log(clienName + '开心的离开了~~~~');
+      console.log(clienName + '就决定喝饮料');
+      console.log('进门后，：'+ jiShiNo + '号');
+      console.log('1个小时过去了' + clienName + '付清了费用：1800元');
+      console.log(jiShiNo + '书 递给' + clienName + ' 一杯' + yinLiao + '，降降火~~~~');
+      console.log(clienName + '开心~~~~');
     }
 
     console.log('\n班长今天很辛苦~~~-------------------------------');
@@ -546,40 +542,14 @@ arrnum=777,11,5,2
     //         
     daBaoJian(17, '咖啡','班长'); // 函数的调用,分别传给jiShiNo, yinLiao, clienName
 
-    console.log('\n班长去上班，中午下班后，觉得很疲惫，想再去正规按摩一次，没时间，就请kdb去~~~~------------------');
+    console.log('\n');
     daBaoJian(28, '牛奶','kdb');
 
 
-    console.log('\n班长下午下班回家，他老婆发现他的钱少了，质问之下没有结果，所以被赶出家门，班长不开心，很沮丧，想再去正规按摩一次，无奈没有精力，就打电话请邹老师去~~~~');
-    daBaoJian(99, '汇源肾宝','邹老师');
+    console.log('\n');
+    daBaoJian(99, '汇源','老师');
 //打印结果
 
-班长今天很辛苦~~~-------------------------------
-05函数传参.html:35 班长就决定 去 四楼 正规按摩店 按摩~~~
-05函数传参.html:36 进门后，先要选择正规按摩服务的技师：17号
-05函数传参.html:37 进入专用按摩房，天黑请闭眼~~~~
-05函数传参.html:38 按摩过程很开心~~~~~
-05函数传参.html:39 1个小时过去了，正规按摩服务结束~~~班长付清了费用：1800元
-05函数传参.html:40 17号技师 递给班长 一杯咖啡，降降火~~~~
-05函数传参.html:41 班长开心的离开了~~~~
-05函数传参.html:52 
-班长去上班，中午下班后，觉得很疲惫，想再去正规按摩一次，没时间，就请kdb去~~~~------------------
-05函数传参.html:35 kdb就决定 去 四楼 正规按摩店 按摩~~~
-05函数传参.html:36 进门后，先要选择正规按摩服务的技师：28号
-05函数传参.html:37 进入专用按摩房，天黑请闭眼~~~~
-05函数传参.html:38 按摩过程很开心~~~~~
-05函数传参.html:39 1个小时过去了，正规按摩服务结束~~~kdb付清了费用：1800元
-05函数传参.html:40 28号技师 递给kdb 一杯牛奶，降降火~~~~
-05函数传参.html:41 kdb开心的离开了~~~~
-05函数传参.html:56 
-班长下午下班回家，他老婆发现他的钱少了，质问之下没有结果，所以被赶出家门，班长不开心，很沮丧，想再去正规按摩一次，无奈没有精力，就打电话请邹老师去~~~~
-05函数传参.html:35 邹老师就决定 去 四楼 正规按摩店 按摩~~~
-05函数传参.html:36 进门后，先要选择正规按摩服务的技师：99号
-05函数传参.html:37 进入专用按摩房，天黑请闭眼~~~~
-05函数传参.html:38 按摩过程很开心~~~~~
-05函数传参.html:39 1个小时过去了，正规按摩服务结束~~~邹老师付清了费用：1800元
-05函数传参.html:40 99号技师 递给邹老师 一杯汇源肾宝，降降火~~~~
-05函数传参.html:41 邹老师开心的离开了~~~~
 ```
 
 ## return关键字
@@ -734,11 +704,11 @@ arrnum=777,11,5,2
 //打印结果
 ƒ func() {
       console.log('我是 声明式函数');
-      return '母亲节来了，就是今天，记得给给位的妈妈打电话，如果有对象，给对象的妈妈发个红包~~！'
+      return '母亲节来了'
     }
  -------------------------------------
 我是 声明式函数
-母亲节来了，就是今天，记得给给位的妈妈打电话，如果有对象，给对象的妈妈发个红包~~！
+母亲节来了
 ```
 
 ## 函数作为参数传递
@@ -823,15 +793,15 @@ arrnum=777,11,5,2
     // console.log(bfName); //bfName is not defined
 
     console.log(gfName); // undefined
-    var gfName = '御姐兰';
-    console.log(gfName); // 御姐兰
+    var gfName = '御姐1';
+    console.log(gfName); // 御姐1
 
     console.log('-------------------------------------------');
     //1.3【变量提升.函数内部的变量提升】：函数内的 变量 在预解析时，会被提升到 函数的最前端！！！！
     function varUp() {
       console.log(gfName); // undefined
-      var gfName = '御姐兰';
-      console.log(gfName); // 御姐兰
+      var gfName = '御姐2';
+      console.log(gfName); // 御姐2
     }
 
     varUp();
@@ -839,10 +809,10 @@ arrnum=777,11,5,2
 //打印结果
 我爱你~~~~~
 undefined
-御姐兰
+御姐1
 -------------------------------------------
 undefined
-御姐兰
+御姐2
 ```
 
 ## 自执行函数
@@ -880,12 +850,12 @@ undefined
       console.log(gfName + ' ,i love u ~~~~' + bfName);
     }
 
-    showLove('御姐波多', '班长', '邹老师');
+    showLove('御姐', '班长', '老师');
 //打印结果
-arguments[0]=御姐波多
+arguments[0]=御姐
 arguments[1]=班长
-arguments[2]=邹老师
-御姐波多 ,i love u ~~~~班长
+arguments[2]=老师
+御姐 ,i love u ~~~~班长
 ```
 
 ## 函数重载
@@ -925,15 +895,15 @@ arguments[2]=邹老师
       }
     }
 
-    showLove('御姐波波');
-    showLove('御姐波波', '班长');
+    showLove('御姐');
+    showLove('御姐', '班长');
 //打印结果
 御姐波波
 10模拟函数重载.html:26 undefined
-10模拟函数重载.html:31 御姐波波，我爱你~~~
-10模拟函数重载.html:25 御姐波波
+10模拟函数重载.html:31 御姐，我爱你~~~
+10模拟函数重载.html:25 御姐
 10模拟函数重载.html:26 班长
-10模拟函数重载.html:37 御姐波波，我爱你~~~班长
+10模拟函数重载.html:37 御姐，我爱你~~~班长
 ```
 
 ## 对象
@@ -961,11 +931,11 @@ arguments[2]=邹老师
 
       */
       var obj = {
-        name : '小冰冰',
+        name : '冰冰',
         gender : true,
         age : 37,
         sleep : function(){
-          console.log('小班班，快来睡觉觉咯~~~~~');
+          console.log('班班');
         }
       };
 
@@ -979,10 +949,10 @@ arguments[2]=邹老师
       // var arr = [1,2,3]; // new Array();
       // arr.push(4);
 //打印结果
-02.对象.html:38 小冰冰
+02.对象.html:38 冰冰
 02.对象.html:39 true
 02.对象.html:40 37
-02.对象.html:32 小班班，快来睡觉觉咯~~~~~
+02.对象.html:32 班班
 ```
 
 ## 对象成员访问
@@ -990,22 +960,22 @@ arguments[2]=邹老师
 ```javascript
 // {} 创建 -- 字面量------------------------------
     var obj = { // 创建 带初始值的对象
-      name: '裙姐',
+      name: '裙',
       age: 35,
       fuSe: '非常黑',
       // hobby : '女',
       sayHi: function () {
-        console.log('我是 周林林老师的 女朋友~~~~ 害羞~~~');
+        console.log('我是老师的');
       }
     };
     console.log(obj);
     
     //1.通过 . 来访问 对象的成员 -----------------------------------------------------------
-    console.log(obj.name); // '裙姐'
+    console.log(obj.name); // '裙'
     obj.sayHi(); // 注意：一定要加 小括号！！！ 
 
     //2.设置 对象的 属性值
-    obj.name = '林林妹';
+    obj.name = '林林';
 
     //3.如何向对象中 添加属性！！！！---------------------------------------------------------
 
@@ -1014,7 +984,7 @@ arguments[2]=邹老师
 
     //4.想对象中 添加 方法！！！！-----------------------------------------------------------
     obj.run = function () {
-      console.log('我要分手~~~我要跑路~~~！');
+      console.log('嗯嗯');
     };
 
     //5.删除对象 的属性
@@ -1037,7 +1007,7 @@ arguments[2]=邹老师
       gender: false,
       age: 1,
       bark: function () {
-        console.log('汪汪~~~~我想你了~~~~~');
+        console.log('我想你了');
       }
     };
 
@@ -1073,7 +1043,7 @@ arguments[2]=邹老师
       gender: false,
       age: 1,
       bark: function () {
-        console.log('汪汪~~~~我想你了~~~~~' + this.name);
+        console.log('汪汪' + this.name);
       }
     };
 
@@ -1102,7 +1072,7 @@ arguments[2]=邹老师
 
 ```javascript
 //比如
- // 批量创建对象： 兰老师 要创建 3个学员对象，用来保存 学员信息
+ // 批量创建对象： 老师 要创建 3个学员对象，用来保存 学员信息
     // var stu01 = {
     //   sName : '班长',
     //   sAge : 29,
@@ -1180,7 +1150,7 @@ arguments[2]=邹老师
     //               d. 返回 添加了 成员的 对象 （就是 第一步 创建的 那个 空对象，只不过 已经有成员了）
 
     //  创建的对象 都是 StuInfo类型的
-    var stu01 = new StuInfo('小苍苍', 34, false);
+    var stu01 = new StuInfo('苍苍', 34, false);
     var stu02 = new StuInfo('班长', 18, true);
     stu01.sayHi();
     stu02.sayHi();
@@ -1199,11 +1169,11 @@ arguments[2]=邹老师
       };
     }
 //打印结果
-hi~~美女，我是【小苍苍】，今年【34】岁了，性别【女】
+hi~~美女，我是【苍苍】，今年【34】岁了，性别【女】
 11使用构造函数和new关键字批量创建对象.html:48 hi~~美女，我是【班长】，今年【18】岁了，性别【男】
 11使用构造函数和new关键字批量创建对象.html:38 
 StuInfosAge: 34sGender: 
-             falsesName: "小苍苍"
+             falsesName: "苍苍"
              sayHi: ƒ ()__proto__: Object
 ```
 
@@ -1414,41 +1384,41 @@ Array(10)0: "P城"1: "Y城"2: "四楼"3: "监狱"4: "Z城"5: "A城"6: "五楼"7:
 
       //2.使用 字符串的 方法 类 获取 新的字符串
       //2.1 charAt 根据下标 返回 字符
-      var str = '传智播客好，传智播客妙，上了船就不退票~~~';
+      var str = '上了船就不退票~~~';
       var char1 = str.charAt(4);
 
       console.log(char1);
 
       //2.2 concat 拼接多个 字符串
-      var str = '传智播客好，传智播客妙，上了船就不退票~~~';
-      var str1 = str.concat('小白0基础，都能教好教会~~');
+      var str = '上了船就不退票~~~';
+      var str1 = str.concat('0基础');
       console.log(str);
       console.log(str1);
 
       //2.3 indexOf 根据字符，返回在字符串中找到的【第一个】匹配字符的下标 
-      var str = '~~~传智播客好，传智播客妙，上了船就不退票~~~';
+      var str = '上了船就不退票~~~';
       var haoIndex = str.indexOf('好');
       console.log(haoIndex);
 
       var haoIndex2 = str.indexOf('退票'); // 如果 找到字符串，会把找到的 字符串的第一个字符 下标返回
       console.log(haoIndex2);
 
-      var czIndex = str.indexOf('传智');
+      var czIndex = str.indexOf('你好');
       console.log(czIndex);
 
       //2.4 lastIndexOf 根据字符，返回在字符串中找到的【最后一个】匹配字符的下标 
-      var str = '~~~传智播客好，传智播客妙，传智播客呱呱叫，上了船就不退票~~~';
-      var haoIndex = str.lastIndexOf('传智');
+      var str = '上了船就不退票~~~';
+      var haoIndex = str.lastIndexOf('ok');
       console.log(haoIndex);
 
       //2.5 截取字符串 substr(index,count) ，从 下标 index开始 ，截取 count 个字符
-      var str = '~~~传智播客好，传智播客妙，传智播客呱呱叫，上了船就不退票~~~';
+      var str = '上了船就不退票~~~';
       var str1 = str.substr(9,5); // 如果 不传 第二个参数，就会从 指定下标 截取 到 字符串结束
       console.log(str);
       console.log(str1);
 
       //2.6 截取字符串 substring(index,endIndex) --> [index,endIndex)
-      var str = '~~~传智播客好，传智播客妙，传智播客呱呱叫，上了船就不退票~~~';
+      var str = '上了船就不退票~~~';
       str1 = str.substring(0,3); // 如果 不传 第二个参数，就会从 指定下标 截取 到 字符串结束
       console.log(str);
       console.log(str1);
@@ -1474,15 +1444,15 @@ Array(10)0: "P城"1: "Y城"2: "四楼"3: "监狱"4: "Z城"5: "A城"6: "五楼"7:
       console.log(str2);
 //打印结果
 09字符串对象的api.html:15 好
-09字符串对象的api.html:20 传智播客好，传智播客妙，上了船就不退票~~~
-09字符串对象的api.html:21 传智播客好，传智播客妙，上了船就不退票~~~小白0基础，都能教好教会~~
+09字符串对象的api.html:20 上了船就不退票~~~
+09字符串对象的api.html:21 上了船就不退票~~~0基础
 09字符串对象的api.html:26 7
 09字符串对象的api.html:29 20
 09字符串对象的api.html:32 3
 09字符串对象的api.html:37 15
-09字符串对象的api.html:42 ~~~传智播客好，传智播客妙，传智播客呱呱叫，上了船就不退票~~~
-09字符串对象的api.html:43 传智播客妙
-09字符串对象的api.html:48 ~~~传智播客好，传智播客妙，传智播客呱呱叫，上了船就不退票~~~
+09字符串对象的api.html:42 上了船就不退票~~~
+09字符串对象的api.html:43 你好
+09字符串对象的api.html:48 上了船就不退票~~~
 09字符串对象的api.html:49 ~~~
 09字符串对象的api.html:56 我爱你，但我不敢说，可是一直默默的爱着你~~
 09字符串对象的api.html:57 我狠你，但我不敢说，可是一直默默的狠着你~~

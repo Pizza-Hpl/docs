@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Pizza-Hpl/docs#readme",
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.5.2",
     "@vuepress/plugin-pwa": "^1.5.2"
   },
   "dependencies": {

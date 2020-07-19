@@ -91,15 +91,15 @@ var k = document.getElementById('k')
 ```javascript
 //移入
         b.onmouseover = function(){
-            alert('班长要和白石老师交流啦');
+            alert('班长要和组长交流');
         };
   /鼠标双击的时候 double
         k.ondblclick = function(){
-            alert('我要开个背');
+            alert('我要双击了');
         };      
 
 //2.2 双标签文字： innerText 
-        box.innerText = '我是班长女神';//修改box中的内容
+        box.innerText = '我是双标签文字';//修改box中的内容
 ```
 
 ## 数组去重
@@ -237,8 +237,8 @@ var arr = [20,25,88,66,90,25,88,66];//[20,25,66,88,90]
 
 <ul id="ul1">
         <li>ewtshnbfdgnfdgnm gdff</li>
-        我是班长的坤哥
-        <!-- 我是班长的小迷妹 -->
+        我是班长
+        <!-- 我是班长的妹 -->
         <li id="li1">我是班长1</li>
         <li id="li2">我是班长2</li>
         <li>我是班长3</li>
@@ -335,7 +335,7 @@ console.log(li2.parentNode.parentNode.parentNode.parentNode.parentNode);//null
 
 ## appendChild 添加子元素
 
-```
+```javascript
 /*   父元素.appendChild(子元素)
 
     1.新创建的元素   :  则添加到最后面
