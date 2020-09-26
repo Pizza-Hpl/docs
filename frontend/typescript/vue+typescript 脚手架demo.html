@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue+typescript 脚手架demo | Pizza-Hpl</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/docs/favicon.ico">
+    <link name="author" href="Pizze-Hpl">
+    <link name="keywords" href="Pizze-Hpl个人博客,快速入门前端必备知识点,node,vue,微信小程序,html,css...">
+    <meta name="description" content="快速入门前端必备知识点,node,vue,微信小程序,html,css...">
+    <link rel="preload" href="/docs/assets/css/0.styles.c374f878.css" as="style"><link rel="preload" href="/docs/assets/js/app.09f1ad5d.js" as="script"><link rel="preload" href="/docs/assets/js/2.a39484a0.js" as="script"><link rel="preload" href="/docs/assets/js/18.276141c6.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.d4b50ec2.js"><link rel="prefetch" href="/docs/assets/js/11.87036183.js"><link rel="prefetch" href="/docs/assets/js/12.77f99ea2.js"><link rel="prefetch" href="/docs/assets/js/13.7e74f846.js"><link rel="prefetch" href="/docs/assets/js/14.33717ee9.js"><link rel="prefetch" href="/docs/assets/js/15.1cc424a0.js"><link rel="prefetch" href="/docs/assets/js/16.e5632eb9.js"><link rel="prefetch" href="/docs/assets/js/17.7de52e08.js"><link rel="prefetch" href="/docs/assets/js/19.a5cd5f2d.js"><link rel="prefetch" href="/docs/assets/js/20.c1d7ecb8.js"><link rel="prefetch" href="/docs/assets/js/21.26454bfc.js"><link rel="prefetch" href="/docs/assets/js/22.a5772627.js"><link rel="prefetch" href="/docs/assets/js/23.19638cb3.js"><link rel="prefetch" href="/docs/assets/js/24.fe39a364.js"><link rel="prefetch" href="/docs/assets/js/3.631f91f5.js"><link rel="prefetch" href="/docs/assets/js/4.9e731c31.js"><link rel="prefetch" href="/docs/assets/js/5.e0daf3ca.js"><link rel="prefetch" href="/docs/assets/js/6.c9b966e9.js"><link rel="prefetch" href="/docs/assets/js/7.a935c343.js"><link rel="prefetch" href="/docs/assets/js/8.a854488c.js"><link rel="prefetch" href="/docs/assets/js/9.9770e798.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.c374f878.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docs/assets/img/logo.png" alt="Pizza-Hpl" class="logo"> <span class="site-name can-hide">Pizza-Hpl</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/html/html/" class="nav-link">
+  html
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/css/css/" class="nav-link">
+  css
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/javascript/" class="nav-link">
+  javascript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/jquery/jquery/" class="nav-link">
+  jquery
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/node/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/ajax/ajax/" class="nav-link">
+  ajax
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/vue/vue/" class="nav-link">
+  vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/小程序/小程序/" class="nav-link">
+  小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/uni-app/" class="nav-link">
+  uni-app
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/typescript/" class="nav-link router-link-active">
+  typescript
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发者工具" class="dropdown-title"><span class="title">开发者工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tools/git/" class="nav-link">
+  GIT
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/html/html/" class="nav-link">
+  html
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/css/css/" class="nav-link">
+  css
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/javascript/" class="nav-link">
+  javascript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/jquery/jquery/" class="nav-link">
+  jquery
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/node/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/ajax/ajax/" class="nav-link">
+  ajax
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/vue/vue/" class="nav-link">
+  vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/小程序/小程序/" class="nav-link">
+  小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/uni-app/" class="nav-link">
+  uni-app
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/typescript/" class="nav-link router-link-active">
+  typescript
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发者工具" class="dropdown-title"><span class="title">开发者工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tools/git/" class="nav-link">
+  GIT
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>typescript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/frontend/typescript/" aria-current="page" class="sidebar-link">typescript 介绍</a></li><li><a href="/docs/frontend/typescript/typescript.html" class="sidebar-link">typescript</a></li><li><a href="/docs/frontend/typescript/vue+typescript 脚手架demo.html" class="active sidebar-link">vue+typescript 脚手架demo</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/frontend/typescript/vue+typescript 脚手架demo.html#安装包" class="sidebar-link">安装包</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/typescript/vue+typescript 脚手架demo.html#关闭变量未使用检查" class="sidebar-link">关闭变量未使用检查</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/typescript/vue+typescript 脚手架demo.html#项目开始" class="sidebar-link">项目开始</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue-typescript-脚手架demo"><a href="#vue-typescript-脚手架demo" class="header-anchor">#</a> vue+typescript 脚手架demo</h1> <h2 id="安装包"><a href="#安装包" class="header-anchor">#</a> 安装包</h2> <table><thead><tr><th>操作</th> <th>操作路径</th> <th>命令</th></tr></thead> <tbody><tr><td>安装Vue/cli</td> <td>path</td> <td>npm i -g @vue/cli</td></tr> <tr><td>创建vue项目</td> <td>path</td> <td>vue create memo</td></tr> <tr><td>安装vue/typescript</td> <td>path/memo</td> <td>vue add @vue/typescript</td></tr> <tr><td>安装vuex</td> <td>path/memo</td> <td>npm i vuex</td></tr></tbody></table> <p><strong>注意:</strong></p> <div class="language-typescript extra-class"><pre class="language-typescript"><code>安装typescript会出现选择<span class="token punctuation">,</span>全部<span class="token constant">YES</span>就好
+<span class="token operator">?</span> Use <span class="token keyword">class</span><span class="token operator">-</span>style component syntax<span class="token operator">?</span> Yes 
+是否使用<span class="token keyword">class</span>类风格的组件
+
+<span class="token operator">?</span> Use Babel alongside <span class="token function">TypeScript</span> <span class="token punctuation">(</span>required <span class="token keyword">for</span> modern mode<span class="token punctuation">,</span> auto<span class="token operator">-</span>detected polyfills<span class="token punctuation">,</span> transpiling <span class="token constant">JSX</span><span class="token punctuation">)</span><span class="token operator">?</span> Yes
+编译语法
+
+<span class="token operator">?</span> Convert all <span class="token punctuation">.</span>js files to <span class="token punctuation">.</span>ts<span class="token operator">?</span> Yes
+是否js文件转成ts
+
+<span class="token operator">?</span> Allow <span class="token punctuation">.</span>js files to be compiled<span class="token operator">?</span> Yes
+js文件是否要编译
+</code></pre></div><h2 id="关闭变量未使用检查"><a href="#关闭变量未使用检查" class="header-anchor">#</a> 关闭变量未使用检查</h2> <p>eslint会对声明但未使用的变量做检查,如果发现会报错</p> <ol><li><p>项目package.json</p></li> <li><p>修改rules</p></li> <li><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token string">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;no-unused-vars&quot;</span><span class="token operator">:</span><span class="token number">0</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></li></ol> <h2 id="项目开始"><a href="#项目开始" class="header-anchor">#</a> 项目开始</h2> <ol><li><p>删除APP.vue多余的文件与内容</p></li> <li><div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+	删除
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>ts<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Component<span class="token punctuation">,</span> Vue <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue-property-decorator'</span><span class="token punctuation">;</span>
+
+
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    删除
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Vue</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+
+
+</code></pre></div></li> <li><p>删除组件components文件夹中的HellWorld.vue</p></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/frontend/typescript/typescript.html" class="prev">
+        typescript
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.09f1ad5d.js" defer></script><script src="/docs/assets/js/2.a39484a0.js" defer></script><script src="/docs/assets/js/18.276141c6.js" defer></script>
+  </body>
+</html>

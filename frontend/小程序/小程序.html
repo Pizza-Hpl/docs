@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>小程序 | Pizza-Hpl</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/docs/favicon.ico">
+    <link name="author" href="Pizze-Hpl">
+    <link name="keywords" href="Pizze-Hpl个人博客,快速入门前端必备知识点,node,vue,微信小程序,html,css...">
+    <meta name="description" content="快速入门前端必备知识点,node,vue,微信小程序,html,css...">
+    <link rel="preload" href="/docs/assets/css/0.styles.c374f878.css" as="style"><link rel="preload" href="/docs/assets/js/app.09f1ad5d.js" as="script"><link rel="preload" href="/docs/assets/js/2.a39484a0.js" as="script"><link rel="preload" href="/docs/assets/js/21.26454bfc.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.d4b50ec2.js"><link rel="prefetch" href="/docs/assets/js/11.87036183.js"><link rel="prefetch" href="/docs/assets/js/12.77f99ea2.js"><link rel="prefetch" href="/docs/assets/js/13.7e74f846.js"><link rel="prefetch" href="/docs/assets/js/14.33717ee9.js"><link rel="prefetch" href="/docs/assets/js/15.1cc424a0.js"><link rel="prefetch" href="/docs/assets/js/16.e5632eb9.js"><link rel="prefetch" href="/docs/assets/js/17.7de52e08.js"><link rel="prefetch" href="/docs/assets/js/18.276141c6.js"><link rel="prefetch" href="/docs/assets/js/19.a5cd5f2d.js"><link rel="prefetch" href="/docs/assets/js/20.c1d7ecb8.js"><link rel="prefetch" href="/docs/assets/js/22.a5772627.js"><link rel="prefetch" href="/docs/assets/js/23.19638cb3.js"><link rel="prefetch" href="/docs/assets/js/24.fe39a364.js"><link rel="prefetch" href="/docs/assets/js/3.631f91f5.js"><link rel="prefetch" href="/docs/assets/js/4.9e731c31.js"><link rel="prefetch" href="/docs/assets/js/5.e0daf3ca.js"><link rel="prefetch" href="/docs/assets/js/6.c9b966e9.js"><link rel="prefetch" href="/docs/assets/js/7.a935c343.js"><link rel="prefetch" href="/docs/assets/js/8.a854488c.js"><link rel="prefetch" href="/docs/assets/js/9.9770e798.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.c374f878.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docs/assets/img/logo.png" alt="Pizza-Hpl" class="logo"> <span class="site-name can-hide">Pizza-Hpl</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/html/html/" class="nav-link">
+  html
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/css/css/" class="nav-link">
+  css
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/javascript/" class="nav-link">
+  javascript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/jquery/jquery/" class="nav-link">
+  jquery
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/node/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/ajax/ajax/" class="nav-link">
+  ajax
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/vue/vue/" class="nav-link">
+  vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/小程序/小程序/" class="nav-link">
+  小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/uni-app/" class="nav-link">
+  uni-app
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/typescript/" class="nav-link">
+  typescript
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发者工具" class="dropdown-title"><span class="title">开发者工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tools/git/" class="nav-link">
+  GIT
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/html/html/" class="nav-link">
+  html
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/css/css/" class="nav-link">
+  css
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/javascript/" class="nav-link">
+  javascript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/jquery/jquery/" class="nav-link">
+  jquery
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/node/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/ajax/ajax/" class="nav-link">
+  ajax
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/vue/vue/" class="nav-link">
+  vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/小程序/小程序/" class="nav-link">
+  小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/uni-app/" class="nav-link">
+  uni-app
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/typescript/" class="nav-link">
+  typescript
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发者工具" class="dropdown-title"><span class="title">开发者工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tools/git/" class="nav-link">
+  GIT
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>小程序</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/frontend/小程序/小程序.html" class="active sidebar-link">小程序</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#在微信开发者工具创建" class="sidebar-link">在微信开发者工具创建</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#创建小程序" class="sidebar-link">创建小程序</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#项目结构" class="sidebar-link">项目结构</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#添加页面" class="sidebar-link">添加页面</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#组件" class="sidebar-link">组件</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#数据绑定" class="sidebar-link">数据绑定</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#事件绑定" class="sidebar-link">事件绑定</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#数据更新" class="sidebar-link">数据更新</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#数据渲染wx-for" class="sidebar-link">数据渲染wx:for</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#小程序模块化导入require-导出module-exports" class="sidebar-link">小程序模块化导入require,导出module.exports</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#页面跳转navigator" class="sidebar-link">页面跳转navigator</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#参数的传递navigator带参数跳转" class="sidebar-link">参数的传递navigator带参数跳转</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#顶部页面配置与全局配置" class="sidebar-link">顶部页面配置与全局配置</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#页面配置" class="sidebar-link">页面配置</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#全局配置" class="sidebar-link">全局配置</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#声明式导航与编程式导航" class="sidebar-link">声明式导航与编程式导航</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#给事件传参" class="sidebar-link">给事件传参</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#动态设置导航标题" class="sidebar-link">动态设置导航标题</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#小程序的发布上线" class="sidebar-link">小程序的发布上线</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#发布流程" class="sidebar-link">发布流程</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#设置小程序的相关信息" class="sidebar-link">设置小程序的相关信息</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#mpvue" class="sidebar-link">---mpvue---</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#使用步骤" class="sidebar-link">使用步骤</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#使用步骤-微信小程序开发平台" class="sidebar-link">使用步骤:微信小程序开发平台</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#mpvue的项目结构" class="sidebar-link">mpvue的项目结构</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#修改项目结构" class="sidebar-link">修改项目结构</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#小程序单位rpx" class="sidebar-link">小程序单位rpx</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#小程序中发送异步请求" class="sidebar-link">小程序中发送异步请求</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#配置合法域名" class="sidebar-link">配置合法域名</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#小程序中的横向滚动问题" class="sidebar-link">小程序中的横向滚动问题</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#pormise" class="sidebar-link">---pormise---</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#如何使用pormise" class="sidebar-link">如何使用pormise</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#了解-promise-的执行特点：" class="sidebar-link">了解 promise 的执行特点：</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#已经使用过的-promise" class="sidebar-link">已经使用过的 promise</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#async-await来改造promise" class="sidebar-link">async &amp; await来改造promise</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#try-catch-js处理异常的方式" class="sidebar-link">try-catch--js处理异常的方式</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#使用promise封装wx-request" class="sidebar-link">使用promise封装wx.request</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#jquery的异步请求" class="sidebar-link">JQuery的异步请求</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#webpack" class="sidebar-link">----webpack---</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#使用webpack将模块化的js文件进行转化" class="sidebar-link">使用webpack将模块化的js文件进行转化</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#配置webpack的配置文件" class="sidebar-link">配置webpack的配置文件</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#打包文件（css-loader）：" class="sidebar-link">打包文件（css-loader）：</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#打包文件（less-loader）：" class="sidebar-link">打包文件（less-loader）：</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#打包图片文件file-loader" class="sidebar-link">打包图片文件file-loader</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/小程序/小程序.html#打包字体" class="sidebar-link">打包字体</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><hr> <h1 id="小程序"><a href="#小程序" class="header-anchor">#</a> 小程序</h1> <h2 id="在微信开发者工具创建"><a href="#在微信开发者工具创建" class="header-anchor">#</a> 在微信开发者工具创建</h2> <h2 id="创建小程序"><a href="#创建小程序" class="header-anchor">#</a> 创建小程序</h2> <div class="language- extra-class"><pre class="language-text"><code>1,打开微信开发者工具
+2, 选择小程序  —— 新建小程序
+3, 填写小程序的信息 
+  + 项目名
+  + 项目保存路径
+  + 其它内容使用默认值
+4, 创建成功
+  + 有两个页面
+    + index
+      + xx.js
+      + xx.json
+      + xx.wxml
+      + xx.wxss
+    + log
+</code></pre></div><h2 id="项目结构"><a href="#项目结构" class="header-anchor">#</a> 项目结构</h2> <div class="language- extra-class"><pre class="language-text"><code> 小程序的页面
+     结构：	wxml
+     样式：     wxss
+     行为：      js
+     配置：      json
+ pages：管理项目中的所有的页面
+   index:
+     xx.js
+     xx.json ：页面配置
+     xx.wxml
+     xx.wxss
+ utils：辅助性的文件夹，放一些公用的文件
+ app.js：小程序的入口文件（相当于 vue 中的 main.js）
+ app.json：全局配置
+ app.wxss：全局样式文件
+ project.config.json ：项目的配置文件（相当于 vue 中 webpack.config.js 
+</code></pre></div><h2 id="添加页面"><a href="#添加页面" class="header-anchor">#</a> 添加页面</h2> <div class="language- extra-class"><pre class="language-text"><code> 创建页面
+   在 app.json 中的 pages 下面添加一个新的页面路径
+   保存后会自动生成一个页面文件（包含 .js .json .wxml .wxss）
+ 设置为启动项 
+   将需要设置为启动项页面的路径放到 pages 的最前面，保存
+   
+   &quot;pages&quot;: [
+    &quot;pages/index/main&quot;,
+    &quot;pages/counter/main&quot;
+    &quot;再添加一个页面保存,会自动生成文件夹&quot;
+  ],
+</code></pre></div><h2 id="组件"><a href="#组件" class="header-anchor">#</a> 组件</h2> <div class="language- extra-class"><pre class="language-text"><code>注意:小程序不支持HTML语法,需要到小程序开发者文档中的组件
+1,div === view
+2,img === image
+3,text 文本标签
+</code></pre></div><h2 id="数据绑定"><a href="#数据绑定" class="header-anchor">#</a> 数据绑定</h2> <ul><li>在 js 中的 data 属性中定义数据</li> <li>在 wxml 中通过 &quot;{{}}&quot; 来绑定数据</li></ul> <div class="language-html extra-class"><pre class="language-html"><code>在页面文件夹中的.wxml(如:index页文件夹)
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>image</span> <span class="token attr-name">scr</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{{img}}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>image</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>text</span><span class="token punctuation">&gt;</span></span>{{title}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>text</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code>在页面文件夹中的<span class="token punctuation">.</span><span class="token function">js</span><span class="token punctuation">(</span>如<span class="token operator">:</span>index页文件夹<span class="token punctuation">)</span>
+<span class="token function">Page</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+
+  <span class="token comment">/**
+   * 页面的初始数据
+   */</span>
+  data<span class="token operator">:</span> <span class="token punctuation">{</span>
+    img<span class="token operator">:</span><span class="token string">'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1135064372,163164656&amp;fm=26&amp;gp=0.jpg'</span><span class="token punctuation">,</span>
+    title<span class="token operator">:</span><span class="token string">'图片'</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 生命周期函数--监听页面加载
+   */</span>
+  <span class="token function-variable function">onLoad</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 生命周期函数--监听页面初次渲染完成
+   */</span>
+  <span class="token function-variable function">onReady</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 生命周期函数--监听页面显示
+   */</span>
+  <span class="token function-variable function">onShow</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 生命周期函数--监听页面隐藏
+   */</span>
+  <span class="token function-variable function">onHide</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 生命周期函数--监听页面卸载
+   */</span>
+  <span class="token function-variable function">onUnload</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */</span>
+  <span class="token function-variable function">onPullDownRefresh</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 页面上拉触底事件的处理函数
+   */</span>
+  <span class="token function-variable function">onReachBottom</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 用户点击右上角分享
+   */</span>
+  <span class="token function-variable function">onShareAppMessage</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="事件绑定"><a href="#事件绑定" class="header-anchor">#</a> 事件绑定</h2> <ul><li>通过关键字 bind
+<ul><li>bindtap</li> <li>bindinput: 输入事件</li></ul></li> <li>去 js 文件中的实现这个事件</li> <li>在方法中得到 data 中的数据
+<ul><li>this.data.xx</li></ul></li></ul> <div class="language-html extra-class"><pre class="language-html"><code>在页面文件夹中的.wxml(如:index页文件夹)
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>image</span> <span class="token attr-name">bindtap</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>chufa<span class="token punctuation">&quot;</span></span> <span class="token attr-name">scr</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{{img}}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>image</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>text</span><span class="token punctuation">&gt;</span></span>{{title}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>text</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code>在页面文件夹中的<span class="token punctuation">.</span><span class="token function">js</span><span class="token punctuation">(</span>如<span class="token operator">:</span>index页文件夹<span class="token punctuation">)</span>
+<span class="token function">Page</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+
+  <span class="token comment">/**
+   * 页面的初始数据
+   */</span>
+  data<span class="token operator">:</span> <span class="token punctuation">{</span>
+    	      img<span class="token operator">:</span><span class="token string">'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1135064372,163164656&amp;fm=26&amp;gp=0.jpg'</span><span class="token punctuation">,</span>
+    title<span class="token operator">:</span><span class="token string">'图片'</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//在这里直接触发事件,这里不像vue要在methods里面写方法</span>
+   <span class="token function">chufa</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+       console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'触发了'</span><span class="token punctuation">)</span>
+       <span class="token comment">//如果要拿到data中的数据,一定要this.data才能拿到</span>
+       console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>title<span class="token punctuation">)</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="数据更新"><a href="#数据更新" class="header-anchor">#</a> 数据更新</h2> <p>通过 this.setData 来修改数据</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>text</span><span class="token punctuation">&gt;</span></span>{{index}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>text</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">bindtap</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>add<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>点击数字增加<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">Page</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+
+  <span class="token comment">/**
+   * 页面的初始数据
+   */</span>
+  data<span class="token operator">:</span> <span class="token punctuation">{</span>
+   	index<span class="token operator">:</span><span class="token number">0</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    	<span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>index<span class="token operator">++</span><span class="token punctuation">;</span> <span class="token comment">//错误,修改不了</span>
+    	<span class="token comment">//注意:小程序中的数据如果要响应式,不能直接通过this.data.xx来修改</span>
+    	<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setDate</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    		<span class="token keyword">this</span><span class="token punctuation">.</span>date<span class="token punctuation">.</span>index<span class="token operator">+</span><span class="token number">1</span>
+    	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="数据渲染wx-for"><a href="#数据渲染wx-for" class="header-anchor">#</a> 数据渲染wx:for</h2> <ul><li>wx:for=“”</li> <li>选项： </li> <li>下标： </li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name"><span class="token namespace">wx:</span>for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{{arr}}<span class="token punctuation">&quot;</span></span> <span class="token attr-name"><span class="token namespace">wx:</span>key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{{index}}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+		下标:{{index}},name:{{item.name}},id:{{item.id}}
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">Page</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+
+  <span class="token comment">/**
+   * 页面的初始数据
+   */</span>
+  data<span class="token operator">:</span> <span class="token punctuation">{</span>
+   	arr<span class="token operator">:</span><span class="token punctuation">[</span>
+   		<span class="token punctuation">{</span>name<span class="token operator">:</span><span class="token string">&quot;娜美&quot;</span><span class="token punctuation">,</span>id<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+   		<span class="token punctuation">{</span>name<span class="token operator">:</span><span class="token string">&quot;路飞&quot;</span><span class="token punctuation">,</span>id<span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">}</span>
+   	<span class="token punctuation">]</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="小程序模块化导入require-导出module-exports"><a href="#小程序模块化导入require-导出module-exports" class="header-anchor">#</a> 小程序模块化导入require,导出module.exports</h2> <div class="language- extra-class"><pre class="language-text"><code>node.js模块化
+	规范: commonjs
+	规定了模块的导入导出
+		导入:
+			require()
+		导出:
+			exports
+			module.exports
+小程序支持模块化：
+	 导出：
+  		module.exports
+	 导入
+  		require
+</code></pre></div><p>如果数据很多</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>在utils中新建heroList<span class="token punctuation">.</span>js
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">[</span> <span class="token comment">/* 1 */</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;heroName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;神女卑弥呼&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://p5.qhimg.com/dr/72__/t01e7b45b10c504fa11.png&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;skill&quot;</span><span class="token operator">:</span> <span class="token string">&quot;八方鬼缚阵&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/* 2 */</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">&quot;heroName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ICU特工护士&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://p6.qhimg.com/dr/72__/t01b8063ea608652431.png&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;skill&quot;</span><span class="token operator">:</span> <span class="token string">&quot;注射！&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/* 3 */</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">&quot;heroName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;救世的圣母玛利亚&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://p1.qhimg.com/dr/72__/t01d07b708528503e24.png&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;skill&quot;</span><span class="token operator">:</span> <span class="token string">&quot;召唤圣物&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span>
+</code></pre></div><p>在需要的页面js中导入</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// pages/ganme/ganme.js//ganme页面文件夹的中</span>
+<span class="token keyword">var</span> herosList <span class="token operator">=</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;../../utils/heroList.js&quot;</span><span class="token punctuation">)</span>
+<span class="token function">Page</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+
+  <span class="token comment">/**
+   * 页面的初始数据
+   */</span>
+  data<span class="token operator">:</span> <span class="token punctuation">{</span>
+	herosList<span class="token operator">:</span>herosList
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>wxml中渲染</p> <h2 id="页面跳转navigator"><a href="#页面跳转navigator" class="header-anchor">#</a> 页面跳转navigator</h2> <p>从页面跳转到另外一个页面</p> <ul><li>通过组件: navigator</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>navigator</span> <span class="token attr-name">url</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pages/loge/loge<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>跳转到loge页面<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>navigator</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="参数的传递navigator带参数跳转"><a href="#参数的传递navigator带参数跳转" class="header-anchor">#</a> 参数的传递navigator带参数跳转</h2> <ul><li>跳转时通过路径携带参数：
+<ul><li><navigator url="路径?参数键=参数值">跳转</navigator></li> <li>在生命周期事件中 onload 中接收
+<ul><li>执行时机：当页面加载时执行</li> <li>在 onload 在一个参数： options
+<ul><li>options 就是参数</li></ul></li></ul></li></ul></li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>navigator</span> <span class="token attr-name">url</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pages/loge/loge?name=hpl<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>跳转到loge页面<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>navigator</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code>//loge页wxml
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span><span class="token punctuation">&gt;</span></span>
+	{{name}}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code>loge页js
+
+
+<span class="token function">Page</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+
+  <span class="token comment">/**
+   * 页面的初始数据
+   */</span>
+  data<span class="token operator">:</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span><span class="token string">''</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 生命周期函数--监听页面加载
+   */</span>
+  <span class="token function-variable function">onLoad</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">//当页面加载时执行</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span> <span class="token punctuation">(</span>options<span class="token punctuation">)</span>
+      <span class="token comment">//获取传过来的数据并传递</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          name<span class="token operator">:</span> options<span class="token punctuation">.</span>name
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="顶部页面配置与全局配置"><a href="#顶部页面配置与全局配置" class="header-anchor">#</a> 顶部页面配置与全局配置</h2> <p>1,小程序开发文档---框架---小程序配置</p> <h2 id="页面配置"><a href="#页面配置" class="header-anchor">#</a> 页面配置</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code>在页面文件夹中的json中配置
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;usingComponents&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;navigationBarTextStyle&quot;</span><span class="token operator">:</span><span class="token string">&quot;white&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;navigationBarTitleText&quot;</span><span class="token operator">:</span><span class="token string">&quot;商品详情&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="全局配置"><a href="#全局配置" class="header-anchor">#</a> 全局配置</h2> <p>1,在app.json中设置</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code> <span class="token string">&quot;window&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;backgroundTextStyle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;light&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;navigationBarBackgroundColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#fff&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;navigationBarTitleText&quot;</span><span class="token operator">:</span> <span class="token string">&quot;WeChat&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;navigationBarTextStyle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;black&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><h2 id="声明式导航与编程式导航"><a href="#声明式导航与编程式导航" class="header-anchor">#</a> 声明式导航与编程式导航</h2> <p>导航的方式：</p> <ul><li>声明式导航：
+<ul><li>vue:
+<ul><li><a href="/docs/frontend/%E5%B0%8F%E7%A8%8B%E5%BA%8F/path"></a></li></ul></li> <li>小程序：
+<ul><li><navigator url="path"></navigator></li></ul></li></ul></li> <li>编程式导航：
+<ul><li>vue:
+<ul><li>this.$router.push(path)</li></ul></li> <li>小程序：
+<ul><li>wx.navigateTo(path)</li></ul></li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>编程式导航
+ 1,给 item 添加一个点击事件
+ 	&lt;view bindtap=&quot;todetail&quot;&gt;&lt;/view&gt;
+
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code> <span class="token number">2</span><span class="token punctuation">,</span>在事件中通过编程式导航进行跳转<span class="token punctuation">,</span>页面<span class="token punctuation">.</span>js中
+ <span class="token function">Page</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+
+  <span class="token comment">/**
+   * 页面的初始数据
+   */</span>
+  data<span class="token operator">:</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span><span class="token string">''</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  
+  <span class="token comment">//编程式导航</span>
+  
+
+  <span class="token function">todetail</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    wx<span class="token punctuation">.</span><span class="token function">navigateTo</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      url<span class="token operator">:</span> <span class="token string">'要去的页面路径'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">/**
+   * 生命周期函数--监听页面加载
+   */</span>
+  <span class="token function-variable function">onLoad</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="给事件传参"><a href="#给事件传参" class="header-anchor">#</a> 给事件传参</h2> <p>1,1,小程序开发文档---视图层---事件系统</p> <ul><li>传递：
+<ul><li>固定写法
+<ul><li>data-paramsname = &quot;&quot;</li></ul></li></ul></li> <li>接收
+<ul><li>固定写法：事件的参数中：
+<ul><li>event.currentTarget.dataset.paramsname</li></ul></li></ul></li></ul> <div class="language-html extra-class"><pre class="language-html"><code>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">data-id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{{item.id}}<span class="token punctuation">&quot;</span></span> <span class="token attr-name">bindtap</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>todetail<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+因为小程序中事件不能传值,所以如果要点击把相应名称或id传过去需要data-id
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">Page</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+
+  <span class="token comment">/**
+   * 页面的初始数据
+   */</span>
+  data<span class="token operator">:</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span><span class="token string">''</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  
+  <span class="token comment">//编程式导航</span>
+  
+
+  <span class="token function">todetail</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token comment">//这里event就是data-id=&quot;{{item.id}}&quot;传递过来的id</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>currentTarget<span class="token punctuation">.</span>dataset<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+      <span class="token comment">//所以就可以给跳转页面传参数</span>
+    wx<span class="token punctuation">.</span><span class="token function">navigateTo</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      url<span class="token operator">:</span> <span class="token string">&quot;pages/loge/loge? + event.currentTarget.dataset.id&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">/**
+   * 生命周期函数--监听页面加载
+   */</span>
+  <span class="token function-variable function">onLoad</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="动态设置导航标题"><a href="#动态设置导航标题" class="header-anchor">#</a> 动态设置导航标题</h2> <p>很多时候点击跳转到其它页面需要改变顶部title</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">Page</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+
+  <span class="token comment">/**
+   * 页面的初始数据
+   */</span>
+  data<span class="token operator">:</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span><span class="token string">''</span>
+	detailobj<span class="token operator">:</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  
+  <span class="token comment">//编程式导航</span>
+  
+
+  <span class="token function">todetail</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token comment">//这里event就是data-id=&quot;{{item.id}}&quot;传递过来的id</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>currentTarget<span class="token punctuation">.</span>dataset<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+      <span class="token comment">//所以就可以给跳转页面传参数</span>
+    wx<span class="token punctuation">.</span><span class="token function">navigateTo</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      url<span class="token operator">:</span> <span class="token string">&quot;pages/loge/loge? + event.currentTarget.dataset.id&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">/**
+   * 生命周期函数--监听页面加载
+   */</span>
+  <span class="token function-variable function">onLoad</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">//获取数据并修改导航标题</span>
+	wx<span class="token punctuation">.</span><span class="token function">setNavigationBarTitle</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  			title<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>detailobj<span class="token punctuation">.</span>name<span class="token punctuation">,</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="小程序的发布上线"><a href="#小程序的发布上线" class="header-anchor">#</a> 小程序的发布上线</h2> <h2 id="发布流程"><a href="#发布流程" class="header-anchor">#</a> 发布流程</h2> <ul><li>开发者工具
+<ul><li>提交代码</li></ul></li> <li>小程序后台管理
+<ul><li>提交审核</li> <li>注意点：
+<ul><li>小程序的审核最容易通过的类型为： 工具 ---&gt; 信息查询</li></ul></li></ul></li></ul> <h2 id="设置小程序的相关信息"><a href="#设置小程序的相关信息" class="header-anchor">#</a> 设置小程序的相关信息</h2> <ul><li>入口： 右上角头像下面的名称</li> <li>选项：
+<ul><li>下载自己的二维码</li> <li>添加服务类目中的：
+<ul><li>工具 ---&gt; 信息查询</li></ul></li></ul></li></ul> <h2 id="mpvue"><a href="#mpvue" class="header-anchor">#</a> ---mpvue---</h2> <div class="language- extra-class"><pre class="language-text"><code>mpvue是美团出品的一种开发小程序的第三方框架
+01,mpvue有什么用
+	基于vue.js
+	支持vue.js语法和构建工具体系
+		语法:我们可以用vue的语法来书写小程序
+		构建工具体系:可以使用vue的脚手架vue-cli
+02:为什么要学习mpvue
+	1:由于小程序的语法与vue的语法很相似,很容易搞混,使用mpvue开发要方便很多
+	2:如果没有接触过小程序,可以直接使用mpvue来开发小程序
+
+</code></pre></div><h2 id="使用步骤"><a href="#使用步骤" class="header-anchor">#</a> 使用步骤</h2> <div class="language- extra-class"><pre class="language-text"><code>01:初始化一个项目
+	1,准备环境:
+		检查node.js  node -v
+		检查npm	   npm -v
+		是否需要切换到淘宝镜像
+	2,安装vue-cli@2.9, 注意,这里的版本是2.9
+		如果需要2.跟3.多的版本都可以用到的话,需要下载桥接工具
+			命令:npm install -g @vue/cli-init
+	3,初始化项目
+		vue init mpvue/mpvue-quickstart my项目名
+		切换目录
+			cd my项目名
+		安装依赖
+			npm i
+		运行项目
+			npm run dev
+02:搭建小程序的开发环境
+	安装小程序开发平台
+03:调试开发mpvue
+	1,在vscode编写代码
+	2,在小程序开发平台看效果
+	3,在小程序中查看步骤
+		1,运行项目,npm run dev 将vscode中的代码进行打包为小程序项目
+		2,再用小程序中查看,npm run dev.会有一个dist文件夹
+
+</code></pre></div><h2 id="使用步骤-微信小程序开发平台"><a href="#使用步骤-微信小程序开发平台" class="header-anchor">#</a> 使用步骤:微信小程序开发平台</h2> <div class="language- extra-class"><pre class="language-text"><code>1,在项目project.config.json修改自己的appid
+(appidz在微信公众平台,小程序,--开发--开发设置--appid)
+2,打开微信小程序开发平台
+3,导入项目,选择项目文件夹目录
+
+</code></pre></div><h2 id="mpvue的项目结构"><a href="#mpvue的项目结构" class="header-anchor">#</a> mpvue的项目结构</h2> <div class="language- extra-class"><pre class="language-text"><code>dist,打包后生成的小程序代码
+src(书写代码存放地)
+	入口:main.js
+		将App.vue进行了渲染
+	App.vue
+		加载了app.json中的内容
+	app.json配置信息
+		pages
+			包含了当前项目中的所有的页面
+			pages/index/main
+	pages/index/main.js
+		将index.vue进行了渲染
+	index.vue
+		template:结构
+		script:逻辑
+		style:样式
+
+</code></pre></div><h2 id="修改项目结构"><a href="#修改项目结构" class="header-anchor">#</a> 修改项目结构</h2> <div class="language- extra-class"><pre class="language-text"><code>1,把src中的pages,log文件删除
+	1,2如果删除完运行报错,可以删除dist目录,在重启项目,npm run dev
+2,再app.json中的pages中log删除
+3,App.vue中的样式style删除
+4,在把src中的pages,index内容删除,在Vue一个
+5,把app.json中的tabBar都删掉
+
+</code></pre></div><h2 id="小程序单位rpx"><a href="#小程序单位rpx" class="header-anchor">#</a> 小程序单位rpx</h2> <ul><li>适配移动设备的一个单位</li> <li>是由小程序自己提供的</li> <li>设计稿宽度默认为 750px</li> <li>将来在写小程序时，可以使用 rpx 尽量使用 rpx</li> <li>部分情况下不建议使用 rpx:
+<ul><li>1.0 字体大小</li> <li>2.0 大小比较小的边框： border: 1rpx solid #ccc;</li></ul></li> <li>总结：
+<ul><li>a. 设计稿宽度为 750px</li> <li>b. 直接去设置稿上量容器的尺寸，直接将数字设置，单位改为 rpx 就可以了</li></ul></li></ul> <h2 id="小程序中发送异步请求"><a href="#小程序中发送异步请求" class="header-anchor">#</a> 小程序中发送异步请求</h2> <p><strong>使用小程序中的API:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>wx.request({
+  url: '',
+  method: '',
+  data: {},
+  header: {},
+  success(res) {}
+})
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code>wx<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+<span class="token comment">//请求连接</span>
+    url<span class="token operator">:</span><span class="token string">''</span><span class="token punctuation">,</span>
+<span class="token comment">//请求方式</span>
+    method<span class="token operator">:</span><span class="token string">'GET'</span><span class="token punctuation">,</span>
+    data<span class="token operator">:</span><span class="token punctuation">{</span>
+        <span class="token comment">//请求时的参数</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token comment">//请求头</span>
+    header<span class="token operator">:</span><span class="token punctuation">{</span><span class="token string">'content-type'</span><span class="token operator">:</span><span class="token string">'json'</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token comment">//需要携带一个参数'content-type':用来设置返回数据的格式</span>
+<span class="token comment">//请求成功回调函数</span>
+    <span class="token function">success</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//res:响应回来的结果</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+需要不校检合法域名
+	详情<span class="token operator">:</span><span class="token operator">--</span><span class="token operator">&gt;</span>本地设置<span class="token operator">--</span><span class="token operator">&gt;</span>勾选不效验合法域名
+设置请求头
+	<span class="token string">'content-type'</span><span class="token operator">:</span><span class="token string">'json'</span>
+</code></pre></div><h2 id="配置合法域名"><a href="#配置合法域名" class="header-anchor">#</a> 配置合法域名</h2> <div class="language- extra-class"><pre class="language-text"><code>1,默认情况下小程序是不允许向外界服务器发送请求
+2,配置合法域名:
+	01,小程序网站--&gt;开发--&gt;开发设置--&gt;服务器域名--&gt;request合法域名--&gt;修改
+	02,添加一个合法域名
+3,临时请求服务器(只在编辑器中生效,如果发布到线上后,依旧无法请求)
+	小程序开发者工具,需要不校检合法域名
+	详情:--&gt;本地设置--&gt;勾选不效验合法域名
+
+</code></pre></div><h2 id="小程序中的横向滚动问题"><a href="#小程序中的横向滚动问题" class="header-anchor">#</a> 小程序中的横向滚动问题</h2> <div class="language-tex extra-class"><pre class="language-tex"><code>1.scroll-view 中的需要滑动的元素不可以用 float 浮动；
+
+2.scroll-view 中的包裹需要滑动的元素的大盒子用 display:flex; 是没有作用的；
+
+3.scroll-view 中的需要滑动的元素要用 dislay:inline-block; 进行元素的横向编排；
+
+4.包裹 scroll-view 的大盒子有明确的宽和加上样式--&gt;  overflow:hidden;white-space:nowrap;
+
+</code></pre></div><h2 id="pormise"><a href="#pormise" class="header-anchor">#</a> ---pormise---</h2> <p>作用:回调函数</p> <p>回调函数的多层嵌套</p> <p>好处:由于JS代码会应用到大量的回调函数,在回调函数嵌套的过程中会出现回调地狱,对代码扩展和维护不便,可以使用promise来解决</p> <h2 id="如何使用pormise"><a href="#如何使用pormise" class="header-anchor">#</a> 如何使用pormise</h2> <p>基本用法:</p> <ul><li><p>是es6中提供的一个新的对象(构造函数)</p></li> <li><p>使用前需要new一下</p></li> <li><p>传入两个参数(函数):     resolve():成功时执行的函数,   reject():失败后执行的函数</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> pormise <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resove<span class="token punctuation">,</span>reject</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+	<span class="token comment">//处理自己的逻辑代码</span>
+	<span class="token comment">//成功时执行的代码</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span>成功<span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token function">resolve</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+		<span class="token comment">//失败后执行的代码</span>
+		<span class="token function">reject</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">//执行逻辑代码</span>
+<span class="token keyword">function</span> <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">//调用resolv函数</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">reject</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">//调用reject函数</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+pormise<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>resolve<span class="token punctuation">,</span>reject<span class="token punctuation">)</span>
+
+
+<span class="token comment">//改成箭头函数</span>
+pormise<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+</code></pre></div><p>步骤:</p> <p>创建pormise对象</p> <p>let pormise = new Promise((resove,reject)=&gt;{})</p> <p>执行逻辑代码</p> <p>pormise.then(resolve,reject)</p></li></ul> <h2 id="了解-promise-的执行特点："><a href="#了解-promise-的执行特点：" class="header-anchor">#</a> 了解 promise 的执行特点：</h2> <ul><li>promise　有自己的状态：
+<ul><li>pending：等待时
+<ul><li>当 promise 被创建时</li></ul></li> <li>fulfilled： 成功时
+<ul><li>当执行 resolve 时</li></ul></li> <li>rejected： 失败时
+<ul><li>当执行 reject 时</li></ul></li> <li>总结：
+<ul><li>resolve：
+<ul><li>修改 promise 的状态</li> <li>调用 then 中第一个方法</li></ul></li> <li>reject:
+<ul><li>修改 promise 的状态</li> <li>调用 then 中第二个方法</li></ul></li></ul></li></ul></li> <li>promise 一旦声明，会立即执行 promise 中的逻辑代码
+<ul><li>面试题</li></ul></li> <li>promise 后面可以接多个 then 方法
+<ul><li>promise 中 then 方法的返回值
+<ul><li>undefined
+<ul><li>下一个 then 中参数为 undefined</li></ul></li> <li>普通数据
+<ul><li>string</li> <li>number</li> <li>array</li> <li>object</li> <li>....</li> <li>下一个 then 中的参数为 普通数据</li></ul></li> <li>promise 对象
+<ul><li>下一个 then 方法由这个 Promise 对象来调用</li></ul></li></ul></li></ul></li></ul> <h2 id="已经使用过的-promise"><a href="#已经使用过的-promise" class="header-anchor">#</a> 已经使用过的 promise</h2> <ul><li>axios</li> <li>ajax</li></ul> <h3 id="补充-api："><a href="#补充-api：" class="header-anchor">#</a> 补充 API：</h3> <ul><li>then: 执行 promise 的逻辑</li> <li>catch:
+<ul><li>用来捕获 promise 中的错误</li></ul></li> <li>all（必须要所有）：
+<ul><li>将多个 Promise 实例，包装成一个新的 Promise 实例
+<ul><li>全部状态为 成功 最终才是 成功</li> <li>只要有一个状态为 失败 最终结果为失败</li></ul></li></ul></li> <li>race（只需要其中一个）:
+<ul><li>将多个 Promise 实例，包装成一个新的 Promise 实例
+<ul><li>只要有一个的状态为成功，最终结果就为成功</li></ul></li></ul></li></ul> <h2 id="async-await来改造promise"><a href="#async-await来改造promise" class="header-anchor">#</a> async &amp; await来改造promise</h2> <ul><li>async &amp; await 是什么
+<ul><li>ES7 中提出的一个新技术</li></ul></li> <li>async &amp; await 有什么用
+<ul><li>用来将异步代码以同步的方式进行书写</li></ul></li> <li>async &amp; await 怎么用
+<ul><li>async 用来修饰需要调用异步方法的函数</li> <li>await 用来修饰异步代码</li></ul></li> <li>特点：
+<ul><li>代码的结构是同步的</li> <li>执行的过程依旧是异步的</li></ul></li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//加载初始数据</span>
+<span class="token keyword">async</span> <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">myRequest</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+		url<span class="token operator">:</span><span class="token string">&quot;请求路径&quot;</span><span class="token punctuation">,</span>
+		method<span class="token operator">:</span><span class="token string">&quot;GET&quot;</span><span class="token punctuation">,</span>
+		header<span class="token operator">:</span><span class="token punctuation">{</span>
+			<span class="token string">'content-type'</span><span class="token operator">:</span><span class="token string">'JSON'</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//返回的数据</span>
+<span class="token keyword">let</span><span class="token punctuation">{</span>statusCode<span class="token punctuation">,</span>data<span class="token punctuation">}</span> <span class="token operator">=</span> res
+<span class="token keyword">if</span><span class="token punctuation">(</span>statusCode <span class="token operator">===</span> <span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">this</span><span class="token punctuation">.</span>onMovie <span class="token operator">=</span> res
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="try-catch-js处理异常的方式"><a href="#try-catch-js处理异常的方式" class="header-anchor">#</a> try-catch--js处理异常的方式</h2> <ul><li><p>是什么：</p> <ul><li>js 处理异常的方式</li></ul></li> <li><p>有什么用：</p> <ul><li>解决异常，用 try 包裹的代码如果出错，不会影响后续代码的执行</li></ul></li> <li><p>怎么用：</p> <div class="language- extra-class"><pre class="language-text"><code>try {
+	// 代码段
+} catch (err) {
+   // 出错后的代码
+}
+</code></pre></div></li> <li><p>特点：</p> <ul><li>如果代码不出错，其实没有任何意义</li></ul></li></ul> <h2 id="使用promise封装wx-request"><a href="#使用promise封装wx-request" class="header-anchor">#</a> 使用promise封装wx.request</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token number">1</span><span class="token punctuation">,</span>创建文件request<span class="token punctuation">.</span>js
+
+<span class="token comment">//封装一个wx.request 使用promise</span>
+<span class="token keyword">function</span> <span class="token function">myRequest</span><span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//判断是否存在 baseUrl</span>
+    options<span class="token punctuation">.</span>baseUrl <span class="token operator">=</span> options<span class="token punctuation">.</span>baseUrl <span class="token operator">||</span> <span class="token string">&quot;放请求地址&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span>reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment">//发送请求</span>
+        wx<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            url<span class="token operator">:</span>options<span class="token punctuation">.</span>baseUrl <span class="token operator">+</span> options<span class="token punctuation">.</span>url<span class="token punctuation">,</span><span class="token comment">//请求路径</span>
+            method<span class="token operator">:</span>options<span class="token punctuation">.</span>method <span class="token operator">||</span> <span class="token string">&quot;GET&quot;</span><span class="token punctuation">,</span><span class="token comment">//请求方式(规范大写 GET POST)</span>
+            data<span class="token operator">:</span>options<span class="token punctuation">.</span>data <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token comment">//请求参数</span>
+            header<span class="token operator">:</span>options<span class="token punctuation">.</span>header <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token comment">//请求头</span>
+            <span class="token function-variable function">success</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">//成功后回调的函数</span>
+                <span class="token function">resolve</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token function-variable function">fail</span><span class="token operator">:</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token function">reject</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//暴露方法</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> myRequest<span class="token punctuation">;</span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code>index中导入
+
+<span class="token keyword">import</span> myRequest <span class="token keyword">from</span> <span class="token string">&quot;../../utils/myRequest.js&quot;</span>
+
+methods<span class="token operator">:</span><span class="token punctuation">{</span>
+	<span class="token keyword">async</span> <span class="token function">getlunbo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token comment">//得到轮播图数据</span>
+		<span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token keyword">await</span>  <span class="token function">myRequest</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+			url<span class="token operator">:</span><span class="token string">'api/public/v1/home/swiperdata'</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span>
+		<span class="token comment">//解构</span>
+		<span class="token keyword">let</span> <span class="token punctuation">{</span>message <span class="token punctuation">,</span> meta<span class="token punctuation">}</span> <span class="token operator">=</span> res<span class="token punctuation">.</span>data
+		<span class="token comment">//判断</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>meta<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+			<span class="token keyword">this</span><span class="token punctuation">.</span>lunbo <span class="token operator">=</span> message
+		<span class="token punctuation">}</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>lunbo<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+<span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token comment">//调用getlunbo()</span>
+	<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getlunbo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="jquery的异步请求"><a href="#jquery的异步请求" class="header-anchor">#</a> JQuery的异步请求</h2> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1.0<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mybtn<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>点击我发请求<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>./jquery.min.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#mybtn'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    $<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        method<span class="token operator">:</span><span class="token string">'GET'</span><span class="token punctuation">,</span>
+        url<span class="token operator">:</span><span class="token string">'路径'</span><span class="token punctuation">,</span>
+        dataType<span class="token operator">:</span><span class="token string">'JSONP'</span><span class="token punctuation">,</span>
+        <span class="token function">success</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="webpack"><a href="#webpack" class="header-anchor">#</a> ----webpack---</h2> <h2 id="使用webpack将模块化的js文件进行转化"><a href="#使用webpack将模块化的js文件进行转化" class="header-anchor">#</a> 使用webpack将模块化的js文件进行转化</h2> <p>步骤：</p> <ul><li><p>1.0 初始化项目</p> <ul><li>npm init -y</li></ul></li> <li><p>2.0 本地安装 webpack</p> <ul><li>npm i webpack --save-dev</li> <li>npm i webpack-cli --save-dev</li></ul></li> <li><p>3.0 打包项目：</p> <ul><li><p>在 package.json 文件中添加命令行：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>    <span class="token string">&quot;script&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack ./src/main.js&quot;</span> <span class="token comment">//需要转化的文件路径</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>运行指令：</p> <ul><li>npm run dev</li></ul></li></ul></li></ul> <h2 id="配置webpack的配置文件"><a href="#配置webpack的配置文件" class="header-anchor">#</a> 配置webpack的配置文件</h2> <ul><li><p>步骤：</p> <ul><li>1.0 创建文件： webpack.config.js</li> <li>2.0 在文件中导出一个对象</li> <li>3.0 在对象中添加
+<ul><li>入口</li> <li>出口</li></ul></li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code>直接在创建新的webpack<span class="token punctuation">.</span>config<span class="token punctuation">.</span>js文件
+
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;path&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//导出内容</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+	<span class="token comment">//项目的入口</span>
+	entry<span class="token operator">:</span><span class="token string">&quot;./src/main.js&quot;</span><span class="token punctuation">,</span>
+	<span class="token comment">//出口</span>
+	output<span class="token operator">:</span><span class="token punctuation">{</span>
+		filename<span class="token operator">:</span><span class="token string">&quot;main.js&quot;</span><span class="token punctuation">,</span><span class="token comment">//打包后的文件名</span>
+		path<span class="token operator">:</span>path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirnme<span class="token punctuation">,</span> <span class="token string">&quot;dist&quot;</span><span class="token punctuation">)</span> <span class="token comment">//打包后生成的路径</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li><p>4.0 在 package.json 文件中修改 dev 指令（打包时使用配置信息）</p> <div class="language- extra-class"><pre class="language-text"><code>    &quot;scripts&quot;: {
+        // 使用 webpack 来打包项目，配置信息来源于 webpack.config.js
+        &quot;dev&quot;: &quot;webpack --config webpack.config.js&quot;
+    }
+</code></pre></div></li></ul></li></ul> <p>打包: npm run dev</p> <h2 id="打包文件（css-loader）："><a href="#打包文件（css-loader）：" class="header-anchor">#</a> 打包文件（css-loader）：</h2> <ul><li><p>样式文件： css</p> <ul><li><p>步骤：</p> <ul><li>1.0 下载第三方包
+<ul><li>npm install --save-dev style-loader css-loader</li></ul></li> <li>2.0 webpack.config.js 配置 css 的打包信息</li></ul> <div class="language- extra-class"><pre class="language-text"><code>   //配置打包文件的文件信息
+   module: {
+   //添加一个规则
+     rules: [
+       {
+       //打包后缀名为css的文件
+         test: /\.css$/,
+         use: [
+         //使用两个loader来进行打包 'style-loader', 'css-loader'
+         
+           'style-loader',
+           'css-loader'
+         ]
+       }
+     ]
+   }
+</code></pre></div></li></ul> <h2 id="打包文件（less-loader）："><a href="#打包文件（less-loader）：" class="header-anchor">#</a> 打包文件（less-loader）：</h2></li> <li><p>样式文件： less</p> <ul><li><p>步骤：</p> <ul><li>1.0 下载第三方包
+<ul><li>npm install --save-dev less-loader less</li></ul></li> <li>2.0 webpack.config.js 配置 css 的打包信息</li></ul> <div class="language- extra-class"><pre class="language-text"><code>    module: {
+        rules: [{
+            test: /\.less$/,
+            use: [{
+                loader: &quot;style-loader&quot; // creates style nodes from JS strings
+            }, {
+                loader: &quot;css-loader&quot; // translates CSS into CommonJS
+            }, {
+                loader: &quot;less-loader&quot; // compiles Less to CSS
+            }]
+        }]
+    }
+</code></pre></div></li></ul></li> <li><p>样式文件： sass</p> <ul><li>跟less步骤差不多</li></ul> <h2 id="打包图片文件file-loader"><a href="#打包图片文件file-loader" class="header-anchor">#</a> 打包图片文件file-loader</h2></li> <li><p>打包图片：</p> <ul><li><p>步骤：</p> <ul><li>1.0 下载第三方包
+<ul><li>npm install --save-dev file-loader</li></ul></li> <li>2.0 配置相关规则：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>       {
+         test: /\.(png|svg|jpg|gif)$/,
+         use: [
+           'file-loader'
+         ]
+       }
+</code></pre></div></li></ul> <h2 id="打包字体"><a href="#打包字体" class="header-anchor">#</a> 打包字体</h2></li> <li><p>打包字体：</p> <ul><li><p>步骤：</p> <ul><li>1.0 loader 与 图片的 loader 是一样的</li> <li>2.0 配置相关规则：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>       {
+         test: /\.(woff|woff2|eot|ttf|otf)$/,
+         use: [
+           'file-loader'
+         ]
+       }
+</code></pre></div></li></ul></li></ul> <h3 id="结论："><a href="#结论：" class="header-anchor">#</a> 结论：</h3> <ul><li>webpack 默认可以打包模块化的 js 文件</li> <li>webpack 中的核心内容其实不多：
+<ul><li>配置：
+<ul><li>项目一些基本信息
+<ul><li>出口</li> <li>入口
+....</li></ul></li></ul></li> <li>loader：
+<ul><li>用来打包文件
+<ul><li>样式</li> <li>图片</li> <li>es6 转 es5
+...</li></ul></li></ul></li> <li>插件：
+<ul><li>自动开启一个服务器</li> <li>自动清除 dist 目录</li> <li>开启热重载</li> <li>...</li></ul></li></ul></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.09f1ad5d.js" defer></script><script src="/docs/assets/js/2.a39484a0.js" defer></script><script src="/docs/assets/js/21.26454bfc.js" defer></script>
+  </body>
+</html>

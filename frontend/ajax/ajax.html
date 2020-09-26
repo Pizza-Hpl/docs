@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ajax | Pizza-Hpl</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/docs/favicon.ico">
+    <link name="author" href="Pizze-Hpl">
+    <link name="keywords" href="Pizze-Hpl个人博客,快速入门前端必备知识点,node,vue,微信小程序,html,css...">
+    <meta name="description" content="快速入门前端必备知识点,node,vue,微信小程序,html,css...">
+    <link rel="preload" href="/docs/assets/css/0.styles.c374f878.css" as="style"><link rel="preload" href="/docs/assets/js/app.09f1ad5d.js" as="script"><link rel="preload" href="/docs/assets/js/2.a39484a0.js" as="script"><link rel="preload" href="/docs/assets/js/10.d4b50ec2.js" as="script"><link rel="prefetch" href="/docs/assets/js/11.87036183.js"><link rel="prefetch" href="/docs/assets/js/12.77f99ea2.js"><link rel="prefetch" href="/docs/assets/js/13.7e74f846.js"><link rel="prefetch" href="/docs/assets/js/14.33717ee9.js"><link rel="prefetch" href="/docs/assets/js/15.1cc424a0.js"><link rel="prefetch" href="/docs/assets/js/16.e5632eb9.js"><link rel="prefetch" href="/docs/assets/js/17.7de52e08.js"><link rel="prefetch" href="/docs/assets/js/18.276141c6.js"><link rel="prefetch" href="/docs/assets/js/19.a5cd5f2d.js"><link rel="prefetch" href="/docs/assets/js/20.c1d7ecb8.js"><link rel="prefetch" href="/docs/assets/js/21.26454bfc.js"><link rel="prefetch" href="/docs/assets/js/22.a5772627.js"><link rel="prefetch" href="/docs/assets/js/23.19638cb3.js"><link rel="prefetch" href="/docs/assets/js/24.fe39a364.js"><link rel="prefetch" href="/docs/assets/js/3.631f91f5.js"><link rel="prefetch" href="/docs/assets/js/4.9e731c31.js"><link rel="prefetch" href="/docs/assets/js/5.e0daf3ca.js"><link rel="prefetch" href="/docs/assets/js/6.c9b966e9.js"><link rel="prefetch" href="/docs/assets/js/7.a935c343.js"><link rel="prefetch" href="/docs/assets/js/8.a854488c.js"><link rel="prefetch" href="/docs/assets/js/9.9770e798.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.c374f878.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docs/assets/img/logo.png" alt="Pizza-Hpl" class="logo"> <span class="site-name can-hide">Pizza-Hpl</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/html/html/" class="nav-link">
+  html
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/css/css/" class="nav-link">
+  css
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/javascript/" class="nav-link">
+  javascript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/jquery/jquery/" class="nav-link">
+  jquery
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/node/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/ajax/ajax/" class="nav-link">
+  ajax
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/vue/vue/" class="nav-link">
+  vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/小程序/小程序/" class="nav-link">
+  小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/uni-app/" class="nav-link">
+  uni-app
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/typescript/" class="nav-link">
+  typescript
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发者工具" class="dropdown-title"><span class="title">开发者工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tools/git/" class="nav-link">
+  GIT
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/html/html/" class="nav-link">
+  html
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/css/css/" class="nav-link">
+  css
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/javascript/" class="nav-link">
+  javascript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/jquery/jquery/" class="nav-link">
+  jquery
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/node/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/ajax/ajax/" class="nav-link">
+  ajax
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/vue/vue/" class="nav-link">
+  vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/小程序/小程序/" class="nav-link">
+  小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/uni-app/" class="nav-link">
+  uni-app
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/typescript/" class="nav-link">
+  typescript
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发者工具" class="dropdown-title"><span class="title">开发者工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tools/git/" class="nav-link">
+  GIT
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>ajax</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/frontend/ajax/ajax.html" aria-current="page" class="active sidebar-link">ajax</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/frontend/ajax/ajax.html#location-href跳转" class="sidebar-link">location.href跳转</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/ajax/ajax.html#jquery-get-发送ajax请求" class="sidebar-link">Jquery-get()发送ajax请求</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/ajax/ajax.html#jquery-get-带参数发送ajax请求" class="sidebar-link">Jquery-get()带参数发送ajax请求</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/ajax/ajax.html#jquery-post-方法的使用" class="sidebar-link">Jquery-post()方法的使用</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/ajax/ajax.html#json的基本使用json字符串转成js对象-json-parse" class="sidebar-link">json的基本使用json字符串转成js对象 JSON.parse()</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/ajax/ajax.html#json的基本使用-js对象转成json对象-json-stringify" class="sidebar-link">json的基本使用 js对象转成json对象 JSON.stringify()</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/ajax/ajax.html#模板-art-template模板引擎的基本使用" class="sidebar-link">模板-art-template模板引擎的基本使用</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/ajax/ajax.html#模板-art-template模板引擎的高级使用" class="sidebar-link">模板-art-template模板引擎的高级使用</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/ajax/ajax.html#原生js发送ajax请求-get" class="sidebar-link">原生JS发送ajax请求.get</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/ajax/ajax.html#原生发送ajax请求-post" class="sidebar-link">原生发送ajax请求-post</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/ajax/ajax.html#onreadystatechange" class="sidebar-link">onreadystatechange</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/ajax/ajax.html#原生js发送ajax请求-get函数" class="sidebar-link">原生JS发送ajax请求---get函数</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/ajax/ajax.html#原生js发送ajax请求-post函数" class="sidebar-link">原生JS发送ajax请求---post函数</a></li><li class="sidebar-sub-header"><a href="/docs/frontend/ajax/ajax.html#回顾原生发送ajax请求" class="sidebar-link">回顾原生发送ajax请求</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><hr> <h1 id="ajax"><a href="#ajax" class="header-anchor">#</a> ajax</h1> <h2 id="location-href跳转"><a href="#location-href跳转" class="header-anchor">#</a> location.href跳转</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//1,浏览器地址栏输入服务器网址,就可以访问服务器</span>
+<span class="token comment">//2,a标签访问服务器</span>
+<span class="token comment">//window.location.href</span>
+<span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">&quot;https://www.baidu.com&quot;</span><span class="token operator">&gt;</span>点我把<span class="token punctuation">,</span>我是a标签<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">&gt;</span>  <span class="token operator">&lt;</span>br<span class="token operator">&gt;</span><span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>button id<span class="token operator">=</span><span class="token string">&quot;btnOne&quot;</span><span class="token operator">&gt;</span>点我把<span class="token punctuation">,</span>我是按钮<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+
+document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'btnTwo'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span>  <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">&quot;https://www.baidu.com&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="jquery-get-发送ajax请求"><a href="#jquery-get-发送ajax请求" class="header-anchor">#</a> Jquery-get()发送ajax请求</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>button<span class="token operator">&gt;</span>点我<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        
+        <span class="token comment">//使用JQ-get方法发送ajax请求</span>
+        $<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        	url<span class="token operator">:</span><span class="token string">'https://autumnfish.cn/api/joke'</span><span class="token punctuation">,</span>
+            <span class="token comment">//回调成功时返回来的函数</span>
+            <span class="token function-variable function">success</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">backdata</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>backdata<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="jquery-get-带参数发送ajax请求"><a href="#jquery-get-带参数发送ajax请求" class="header-anchor">#</a> Jquery-get()带参数发送ajax请求</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/*
+请求地址：https://autumnfish.cn/api/hero/simple
+                请求方法：get
+                请求参数：name
+                参数名	参数说明	备注
+                name	英雄名	
+                响应内容：英雄的外号
+*/</span>
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+            <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                $<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                    url<span class="token operator">:</span><span class="token string">'https://autumnfish.cn/api/hero/simple'</span><span class="token punctuation">,</span>
+                    <span class="token comment">// data:'name=提莫',</span>
+                    data<span class="token operator">:</span><span class="token punctuation">{</span>
+                        name<span class="token operator">:</span><span class="token string">'盖伦'</span> <span class="token comment">//参数</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token function-variable function">success</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">backData</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>backData<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+         <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+</code></pre></div><h2 id="jquery-post-方法的使用"><a href="#jquery-post-方法的使用" class="header-anchor">#</a> Jquery-post()方法的使用</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code> <span class="token comment">/*
+          用户验证
+            验证用户名是否可用
+            请求地址：https://autumnfish.cn/api/user/check
+            请求方法：post
+            请求参数：username
+            响应内容：该用户名是否可用
+ */</span>
+<span class="token comment">//jQ入口函数</span>
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">//发送请求</span>
+    $<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token comment">//请求地址</span>
+    	url<span class="token operator">:</span><span class="token string">'https://autumnfish.cn/api/user/check'</span><span class="token punctuation">;</span>
+        <span class="token comment">//请求参数</span>
+        data<span class="token operator">:</span><span class="token punctuation">{</span>
+        username<span class="token operator">:</span><span class="token string">'亮'</span>
+    		<span class="token punctuation">}</span>
+         <span class="token comment">//返回请求的结果</span>
+        <span class="token function-variable function">success</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">backData</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>backData<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="json的基本使用json字符串转成js对象-json-parse"><a href="#json的基本使用json字符串转成js对象-json-parse" class="header-anchor">#</a> json的基本使用json字符串转成js对象 JSON.parse()</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//json  javascript object notation  js对象格式</span>
+<span class="token comment">//他的数据格式和js对象类似, 不同的是json格式的字符串的键都是用双引号引起来的.</span>
+<span class="token comment">//json是一个带有格式的字符串,其实是一种保存数据的格式.</span>
+<span class="token comment">//json格式的字符串如何转换成js对象.</span>
+<span class="token comment">//JSON.parse(json格式的字符串);  //返回值就是一个js对象.</span>
+<span class="token comment">//1</span>
+        <span class="token comment">// var jsonStr = '[&quot;张三&quot;,&quot;李四&quot;,&quot;王五&quot;]'; //json格式的字符串</span>
+        <span class="token comment">// var arr = JSON.parse(jsonStr); //JSON.parse转换对象,arr就是一个js对象</span>
+        <span class="token comment">// console.log(arr);</span>
+        <span class="token comment">// console.log(arr[1]);</span>
+
+
+        <span class="token comment">//2.</span>
+        <span class="token comment">// var jsonStr2 = '{&quot;name&quot;:&quot;毛来顺&quot;,&quot;age&quot;:18,&quot;score&quot;:100}'; //json格式的字符串.</span>
+        <span class="token comment">// var obj = JSON.parse(jsonStr2);//JSON.parse转换对象,arr就是一个js对象</span>
+        <span class="token comment">// console.log(obj);</span>
+        <span class="token comment">// console.log(obj.name);</span>
+
+        <span class="token comment">//3. </span>
+        <span class="token keyword">var</span> jsonStr3 <span class="token operator">=</span> '<span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token string">&quot;name&quot;</span><span class="token operator">:</span><span class="token string">&quot;毛来顺&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;age&quot;</span><span class="token operator">:</span><span class="token number">18</span><span class="token punctuation">,</span><span class="token string">&quot;score&quot;</span><span class="token operator">:</span><span class="token number">100</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span><span class="token string">&quot;name&quot;</span><span class="token operator">:</span><span class="token string">&quot;杨小毛&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;age&quot;</span><span class="token operator">:</span><span class="token number">38</span><span class="token punctuation">,</span><span class="token string">&quot;score&quot;</span><span class="token operator">:</span><span class="token number">99</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span><span class="token string">&quot;name&quot;</span><span class="token operator">:</span><span class="token string">&quot;姚秀山&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;age&quot;</span><span class="token operator">:</span><span class="token number">16</span><span class="token punctuation">,</span><span class="token string">&quot;score&quot;</span><span class="token operator">:</span><span class="token number">40</span><span class="token punctuation">}</span><span class="token punctuation">]</span>'<span class="token punctuation">;</span> <span class="token comment">//json格式的字符串</span>
+        <span class="token keyword">var</span> arr2 <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>jsonStr3<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span>arr2<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr2<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+       <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+
+</code></pre></div><h2 id="json的基本使用-js对象转成json对象-json-stringify"><a href="#json的基本使用-js对象转成json对象-json-stringify" class="header-anchor">#</a> json的基本使用 js对象转成json对象 JSON.stringify()</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//把js对象,转成json格式的字符串.</span>
+            <span class="token comment">//JSON.stringify(js对象);</span>
+
+            <span class="token comment">//1.</span>
+            <span class="token comment">// var arr = ['张三','李四','王麻子']; //js对象</span>
+            <span class="token comment">// var jsonStr1 = JSON.stringify(arr); //'[&quot;张三&quot;,&quot;李四&quot;,&quot;王麻子&quot;]'</span>
+            <span class="token comment">// console.log(jsonStr1);</span>
+
+            <span class="token comment">//2.</span>
+            <span class="token comment">// var obj = {</span>
+            <span class="token comment">//     name: '毛太顺',</span>
+            <span class="token comment">//     age: 18,</span>
+            <span class="token comment">//     score: 100</span>
+            <span class="token comment">// };</span>
+            <span class="token comment">// var jsonStr2 = JSON.stringify(obj);</span>
+            <span class="token comment">// console.log(jsonStr2); //'{&quot;name&quot;:&quot;毛太顺&quot;,&quot;age&quot;:18,&quot;score&quot;:100}'</span>
+
+
+            <span class="token comment">//3.</span>
+            <span class="token keyword">var</span> arr2 <span class="token operator">=</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    name<span class="token operator">:</span> <span class="token string">'毛太顺'</span><span class="token punctuation">,</span>
+                    age<span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+                    score<span class="token operator">:</span> <span class="token number">100</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    name<span class="token operator">:</span> <span class="token string">'羊小毛'</span><span class="token punctuation">,</span>
+                    age<span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+                    score<span class="token operator">:</span> <span class="token number">100</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    name<span class="token operator">:</span> <span class="token string">'咬秀山'</span><span class="token punctuation">,</span>
+                    age<span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+                    score<span class="token operator">:</span> <span class="token number">100</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">var</span> jsonStr3 <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>arr2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>jsonStr3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">//'[{&quot;name&quot;:&quot;毛太顺&quot;,&quot;age&quot;:18,&quot;score&quot;:100},{&quot;name&quot;:&quot;羊小毛&quot;,&quot;age&quot;:18,&quot;score&quot;:100},{&quot;name&quot;:&quot;咬秀山&quot;,&quot;age&quot;:18,&quot;score&quot;:100}]'</span>
+
+
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="模板-art-template模板引擎的基本使用"><a href="#模板-art-template模板引擎的基本使用" class="header-anchor">#</a> 模板-art-template模板引擎的基本使用</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">'./jquery-1.12.4.min.js'</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">&quot;./template-web.js&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span> <span class="token comment">//导入模板引擎</span>
+    <span class="token operator">&lt;</span>script id<span class="token operator">=</span><span class="token string">&quot;tmp&quot;</span> type<span class="token operator">=</span><span class="token string">&quot;text/html&quot;</span><span class="token operator">&gt;</span>  <span class="token comment">//使用方法</span>
+        <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>h2<span class="token operator">&gt;</span>我的名字是<span class="token operator">:</span><span class="token punctuation">{</span><span class="token punctuation">{</span>name<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>我的年龄是<span class="token operator">:</span><span class="token punctuation">{</span><span class="token punctuation">{</span>age<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>我的女朋友是<span class="token operator">:</span><span class="token punctuation">{</span><span class="token punctuation">{</span>girlFriend<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+        <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">//准备了一份数据</span>
+            <span class="token keyword">var</span> data <span class="token operator">=</span> <span class="token punctuation">{</span>
+                name<span class="token operator">:</span> <span class="token string">'毛太顺'</span><span class="token punctuation">,</span>
+                age<span class="token operator">:</span> <span class="token string">'18'</span><span class="token punctuation">,</span>
+                girlFriend<span class="token operator">:</span> <span class="token string">'大桥未久'</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token keyword">var</span> data2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+                name<span class="token operator">:</span> <span class="token string">'杨小毛'</span><span class="token punctuation">,</span>
+                age<span class="token operator">:</span> <span class="token string">'28'</span><span class="token punctuation">,</span>
+                girlFriend<span class="token operator">:</span> <span class="token string">'苍老师'</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token comment">//调用方法.</span>
+            <span class="token keyword">var</span> res <span class="token operator">=</span> <span class="token function">template</span><span class="token punctuation">(</span><span class="token string">'tmp'</span><span class="token punctuation">,</span> data2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+
+            <span class="token comment">//模板引擎.</span>
+            <span class="token comment">//1.引入他的包,其实就是js文件</span>
+            <span class="token comment">//2.写一个模板(固定的html结构),不同数据那个地方用占位符先占位.</span>
+            <span class="token comment">//    用script标签  给id  给type='text/html'    </span>
+            <span class="token comment">//3.准备数据(自己写的,或者发送ajax请求响应回来的数据)</span>
+            <span class="token comment">//4.调用模板的方法 template(模板id,传递的数据);</span>
+
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><h2 id="模板-art-template模板引擎的高级使用"><a href="#模板-art-template模板引擎的高级使用" class="header-anchor">#</a> 模板-art-template模板引擎的高级使用</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/*
+        模板引擎遍历的语法:
+        {{each}} 
+            {{$value}}  表示遍历出来的元素
+            {{$index}}  表示遍历出来的下标
+        {{/each}}
+        注意:
+            遍历的是什么内容,要写清楚
+            {{$value}}表示遍历出来的整个内容, 你要显示的是内容的什么部分也要写清楚
+     */</span>
+<span class="token operator">&lt;</span>script id<span class="token operator">=</span><span class="token string">&quot;tmp&quot;</span> type<span class="token operator">=</span><span class="token string">&quot;text/html&quot;</span><span class="token operator">&gt;</span>
+    <span class="token comment">// {{each}}---------------------------------02</span>
+        <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>我的名字是<span class="token operator">:</span><span class="token punctuation">{</span><span class="token punctuation">{</span>name<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>h4<span class="token operator">&gt;</span>我的年龄是<span class="token operator">:</span><span class="token punctuation">{</span><span class="token punctuation">{</span>age<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>h4<span class="token operator">&gt;</span>
+            <span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token keyword">if</span> age <span class="token operator">&gt;=</span> <span class="token number">18</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+            <span class="token operator">&lt;</span>h5<span class="token operator">&gt;</span>我成年了<span class="token punctuation">,</span>我可以上网吧了<span class="token operator">&lt;</span><span class="token operator">/</span>h5<span class="token operator">&gt;</span>
+            <span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token keyword">else</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+            <span class="token operator">&lt;</span>h5<span class="token operator">&gt;</span>我还未成年<span class="token punctuation">,</span>偷偷去网吧<span class="token operator">&lt;</span><span class="token operator">/</span>h5<span class="token operator">&gt;</span>
+            <span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token operator">/</span><span class="token keyword">if</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+            <span class="token operator">&lt;</span>ul<span class="token operator">&gt;</span>
+            <span class="token punctuation">{</span><span class="token punctuation">{</span>each girlFriFends<span class="token punctuation">}</span><span class="token punctuation">}</span>
+               <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>我的女朋友是<span class="token operator">:</span><span class="token punctuation">{</span><span class="token punctuation">{</span>$value<span class="token punctuation">.</span>name<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+            <span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token operator">/</span>each<span class="token punctuation">}</span><span class="token punctuation">}</span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+      <span class="token comment">// {{each}}------------------------------------02</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+        <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+            <span class="token keyword">var</span> data <span class="token operator">=</span> <span class="token punctuation">{</span>
+                name<span class="token operator">:</span> <span class="token string">'茅'</span><span class="token punctuation">,</span>
+                age<span class="token operator">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+                girlFriFends<span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">{</span>
+                        name<span class="token operator">:</span> <span class="token string">'波'</span><span class="token punctuation">,</span>
+                        age<span class="token operator">:</span> <span class="token number">18</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span>
+                        name<span class="token operator">:</span> <span class="token string">'苍'</span><span class="token punctuation">,</span>
+                        age<span class="token operator">:</span> <span class="token number">18</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span>
+                        name<span class="token operator">:</span> <span class="token string">'大'</span><span class="token punctuation">,</span>
+                        age<span class="token operator">:</span> <span class="token number">18</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token keyword">var</span> res <span class="token operator">=</span> <span class="token function">template</span><span class="token punctuation">(</span><span class="token string">'tmp'</span><span class="token punctuation">,</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+           <span class="token comment">//document.write(res)----------------------------------02</span>
+					添加
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+<span class="token number">02</span>方法可以遍历循环渲染在页面上
+</code></pre></div><h2 id="原生js发送ajax请求-get"><a href="#原生js发送ajax请求-get" class="header-anchor">#</a> 原生JS发送ajax请求.get</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/*
+        获取多条随机笑话
+        随机获取笑话的接口
+        请求地址：https://autumnfish.cn/api/joke/list
+        请求方法：get
+        请求参数：num
+        参数名	参数说明	备注
+        num	笑话条数	类型为数字,不要给错了
+        响应内容：JSON
+        */</span>
+
+<span class="token comment">//如果原生js发送的是get请求,那参数就拼接在地址的后面</span>
+<span class="token comment">//格式:?key=value</span>
+<span class="token comment">//	   ?key=value&amp;key2=value2</span>
+
+<span class="token comment">//原生js发送ajax请求</span>
+<span class="token comment">//1,创建对象 &quot;小黄人对象&quot;</span>
+<span class="token keyword">var</span> xhr <span class="token operator">=</span> <span class="token function">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//2,设置请求方式和地址</span>
+xhr<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">'get'</span><span class="token punctuation">,</span><span class="token string">'https://autumnfish.cn/api/joke/list'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//3,注册发送成功后,会执行的回调函数</span>
+xhr<span class="token punctuation">.</span><span class="token function-variable function">onload</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>responseText<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//拿到响应回来的内容</span>
+    <span class="token comment">//手动把返回来的json格式的字符串转成JS对象</span>
+    <span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>responseText<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//4,发送</span>
+xhr<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="原生发送ajax请求-post"><a href="#原生发送ajax请求-post" class="header-anchor">#</a> 原生发送ajax请求-post</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/*
+        用户验证
+        验证用户名是否可用
+        请求地址：https://autumnfish.cn/api/user/check
+        请求方法：post
+        请求参数：username
+        参数名	参数说明	备注
+        username	用户名	不能为空,通过 send 方法传递，格式为 key=value
+        xhr.send('username=xxx')
+        响应内容：该用户名是否可用
+        */</span>
+<span class="token comment">//创建xhr对象</span>
+<span class="token keyword">var</span> xhr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//2,open()</span>
+xhr<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">'post'</span><span class="token punctuation">,</span><span class="token string">'https://autumnfish.cn/api/user/check'</span><span class="token punctuation">)</span>
+<span class="token comment">//设置请求头</span>
+xhr<span class="token punctuation">.</span><span class="token function">setRequestHeader</span><span class="token punctuation">(</span><span class="token string">'Content-Type'</span><span class="token punctuation">,</span> <span class="token string">'application/x-www-form-urlencoded'</span><span class="token punctuation">)</span>
+<span class="token comment">//4,注册回调函数</span>
+xhr<span class="token punctuation">.</span><span class="token function-variable function">onload</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>response<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//5.发送</span>
+xhr<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'username=亮'</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="onreadystatechange"><a href="#onreadystatechange" class="header-anchor">#</a> onreadystatechange</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//发送ajax请求.</span>
+        <span class="token comment">//1.创建xhr对象</span>
+        <span class="token keyword">var</span> xhr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>readyState<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//0</span>
+
+        <span class="token comment">//2.open()方法</span>
+        xhr<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">'post'</span><span class="token punctuation">,</span><span class="token string">'https://autumnfish.cn/api/user/check'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>readyState<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//1</span>
+
+        <span class="token comment">//3.如果是post,需要设置请求头.</span>
+        xhr<span class="token punctuation">.</span><span class="token function">setRequestHeader</span><span class="token punctuation">(</span><span class="token string">'Content-Type'</span><span class="token punctuation">,</span> <span class="token string">'application/x-www-form-urlencoded'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//4.注册回调函数</span>
+        <span class="token comment">//onload这个新浏览器支持的,老浏览器是不支持的.</span>
+        <span class="token comment">// xhr.onload = function(){</span>
+        <span class="token comment">//     console.log(xhr.responseText);</span>
+        <span class="token comment">// }</span>
+        <span class="token comment">//那之前是如何注册这个回调函数的呢?</span>
+        <span class="token comment">//这个事件什么时候执行: readystate状态值发生改变的时候才会执行</span>
+        xhr<span class="token punctuation">.</span><span class="token function-variable function">onreadystatechange</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>readyState<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 2 3 4 </span>
+            <span class="token comment">//操作响应回来的内容.</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>readyState <span class="token operator">==</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>responseText<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>readyState<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//1</span>
+
+        <span class="token comment">//5.send();</span>
+        xhr<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'username=哈哈哈888'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+</code></pre></div><h2 id="原生js发送ajax请求-get函数"><a href="#原生js发送ajax请求-get函数" class="header-anchor">#</a> 原生JS发送ajax请求---get函数</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//规定data是key=value&amp;key2=value2</span>
+<span class="token comment">//规定success是一个函数</span>
+<span class="token keyword">function</span> <span class="token keyword">get</span> <span class="token punctuation">(</span><span class="token parameter">url<span class="token punctuation">,</span>data<span class="token punctuation">,</span>success</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">//创建xhr对象</span>
+    <span class="token keyword">var</span> xhr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//参数的拼接</span>
+    url <span class="token operator">+=</span> <span class="token string">'?'</span><span class="token punctuation">;</span>
+    url <span class="token operator">+=</span> data<span class="token punctuation">;</span>
+    <span class="token comment">//2,设置方法方式地址</span>
+    xhr<span class="token punctuation">.</span><span class="token function">open</span> <span class="token punctuation">(</span><span class="token string">'get'</span><span class="token punctuation">,</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//注册回调函数</span>
+    xhr<span class="token punctuation">.</span><span class="token function-variable function">onreadystatechange</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>readyState <span class="token operator">==</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment">//xhr.responseText</span>
+            <span class="token function">success</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>responseText<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">//5,发送</span>
+    xhr<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//验证一下我们自己封装的get函数</span>
+<span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'https://autumnfish.cn/api/joke/list'</span><span class="token punctuation">,</span><span class="token string">'num=4'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">backData</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>backData<span class="token punctuation">)</span><span class="token comment">//其实这里输出 的就是xhr.responseText</span>
+    <span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>backData<span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="原生js发送ajax请求-post函数"><a href="#原生js发送ajax请求-post函数" class="header-anchor">#</a> 原生JS发送ajax请求---post函数</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code> <span class="token keyword">function</span> <span class="token function">post</span><span class="token punctuation">(</span><span class="token parameter">url<span class="token punctuation">,</span>data<span class="token punctuation">,</span>success</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+           <span class="token comment">//1.创建xhr对象.</span>
+           <span class="token keyword">var</span> xhr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+           <span class="token comment">//2.设置方法方式地址</span>
+           xhr<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">'post'</span><span class="token punctuation">,</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+           <span class="token comment">//3.如果是post,还要请求头</span>
+           xhr<span class="token punctuation">.</span><span class="token function">setRequestHeader</span><span class="token punctuation">(</span><span class="token string">'Content-Type'</span><span class="token punctuation">,</span> <span class="token string">'application/x-www-form-urlencoded'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+           <span class="token comment">//4.注册回调函数.</span>
+           xhr<span class="token punctuation">.</span><span class="token function-variable function">onreadystatechange</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+               <span class="token keyword">if</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>readyState <span class="token operator">==</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                   <span class="token comment">//xhr.responseText</span>
+                   <span class="token function">success</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+               <span class="token punctuation">}</span>
+           <span class="token punctuation">}</span>
+           <span class="token comment">//5.发送.</span>
+           xhr<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span> 
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">//验证自己封装的post方法.</span>
+        <span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'https://autumnfish.cn/api/user/check'</span><span class="token punctuation">,</span><span class="token string">'username=毛太顺'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">backData</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>backData<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="回顾原生发送ajax请求"><a href="#回顾原生发送ajax请求" class="header-anchor">#</a> 回顾原生发送ajax请求</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+        <span class="token comment">//1.创建一个xhr对象</span>
+        <span class="token keyword">var</span> xhr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//2.设置请求方式和请求地址open</span>
+        xhr<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">'get'</span><span class="token punctuation">,</span><span class="token string">'https://autumnfish.cn/api/food.xml'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//3.如果是post请求的话,要设置请求头</span>
+        <span class="token comment">// xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');</span>
+        <span class="token comment">//4.注册回调函数 onload是新式浏览器才支持的.</span>
+        <span class="token comment">// xhr.onload = function(){</span>
+        <span class="token comment">//     //xhr.response</span>
+        <span class="token comment">// }</span>
+        <span class="token comment">// 5.状态值readystate发生改变会执行  1-2  2-3 3-4</span>
+        xhr<span class="token punctuation">.</span><span class="token function-variable function">onreadystatechange</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment">//处理响应体的.</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>readyState <span class="token operator">==</span> <span class="token number">4</span> <span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token comment">// console.log(xhr.response);</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>responseXML<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">//5.发送</span>
+        xhr<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token comment">//参数的传递</span>
+        <span class="token comment">//get请求: 参数拼接在url后面  </span>
+        <span class="token comment">//   http://wthrcdn.etouch.cn/weather_mini?city=深圳</span>
+        <span class="token comment">//   http://acg.bakayun.cn/randbg.php?Type=json&amp;t=dfproject</span>
+
+        <span class="token comment">//post请求: 传递的参数写在send()方法中</span>
+        <span class="token comment">// https://autumnfish.cn/api/user/check    xhr.send('username=林哥很帅');</span>
+        <span class="token comment">// https://autumnfish.cn/api/cq/add        xhr.send('heroName=秀山&amp;heroIcon=xx&amp;skillName=秀的一脸');</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.09f1ad5d.js" defer></script><script src="/docs/assets/js/2.a39484a0.js" defer></script><script src="/docs/assets/js/10.d4b50ec2.js" defer></script>
+  </body>
+</html>

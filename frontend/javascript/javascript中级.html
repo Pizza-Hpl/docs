@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>javascript阶段webapi知识 | Pizza-Hpl</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/docs/favicon.ico">
+    <link name="author" href="Pizze-Hpl">
+    <link name="keywords" href="Pizze-Hpl个人博客,快速入门前端必备知识点,node,vue,微信小程序,html,css...">
+    <meta name="description" content="快速入门前端必备知识点,node,vue,微信小程序,html,css...">
+    <link rel="preload" href="/docs/assets/css/0.styles.c374f878.css" as="style"><link rel="preload" href="/docs/assets/js/app.09f1ad5d.js" as="script"><link rel="preload" href="/docs/assets/js/2.a39484a0.js" as="script"><link rel="preload" href="/docs/assets/js/12.77f99ea2.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.d4b50ec2.js"><link rel="prefetch" href="/docs/assets/js/11.87036183.js"><link rel="prefetch" href="/docs/assets/js/13.7e74f846.js"><link rel="prefetch" href="/docs/assets/js/14.33717ee9.js"><link rel="prefetch" href="/docs/assets/js/15.1cc424a0.js"><link rel="prefetch" href="/docs/assets/js/16.e5632eb9.js"><link rel="prefetch" href="/docs/assets/js/17.7de52e08.js"><link rel="prefetch" href="/docs/assets/js/18.276141c6.js"><link rel="prefetch" href="/docs/assets/js/19.a5cd5f2d.js"><link rel="prefetch" href="/docs/assets/js/20.c1d7ecb8.js"><link rel="prefetch" href="/docs/assets/js/21.26454bfc.js"><link rel="prefetch" href="/docs/assets/js/22.a5772627.js"><link rel="prefetch" href="/docs/assets/js/23.19638cb3.js"><link rel="prefetch" href="/docs/assets/js/24.fe39a364.js"><link rel="prefetch" href="/docs/assets/js/3.631f91f5.js"><link rel="prefetch" href="/docs/assets/js/4.9e731c31.js"><link rel="prefetch" href="/docs/assets/js/5.e0daf3ca.js"><link rel="prefetch" href="/docs/assets/js/6.c9b966e9.js"><link rel="prefetch" href="/docs/assets/js/7.a935c343.js"><link rel="prefetch" href="/docs/assets/js/8.a854488c.js"><link rel="prefetch" href="/docs/assets/js/9.9770e798.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.c374f878.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docs/assets/img/logo.png" alt="Pizza-Hpl" class="logo"> <span class="site-name can-hide">Pizza-Hpl</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/html/html/" class="nav-link">
+  html
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/css/css/" class="nav-link">
+  css
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/javascript/" class="nav-link router-link-active">
+  javascript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/jquery/jquery/" class="nav-link">
+  jquery
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/node/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/ajax/ajax/" class="nav-link">
+  ajax
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/vue/vue/" class="nav-link">
+  vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/小程序/小程序/" class="nav-link">
+  小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/uni-app/" class="nav-link">
+  uni-app
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/typescript/" class="nav-link">
+  typescript
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发者工具" class="dropdown-title"><span class="title">开发者工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tools/git/" class="nav-link">
+  GIT
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/html/html/" class="nav-link">
+  html
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/css/css/" class="nav-link">
+  css
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/javascript/" class="nav-link router-link-active">
+  javascript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/jquery/jquery/" class="nav-link">
+  jquery
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/node/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/ajax/ajax/" class="nav-link">
+  ajax
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/vue/vue/" class="nav-link">
+  vue
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/小程序/小程序/" class="nav-link">
+  小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/uni-app/" class="nav-link">
+  uni-app
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/frontend/typescript/" class="nav-link">
+  typescript
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发者工具" class="dropdown-title"><span class="title">开发者工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/docs/tools/git/" class="nav-link">
+  GIT
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>javascript阶段webapi知识</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#根据id获取元素" class="sidebar-link">根据ID获取元素</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#根据标签获取元素" class="sidebar-link">根据标签获取元素</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#根据name属性获取input元素" class="sidebar-link">根据name属性获取input元素</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#根据选择器获取元素" class="sidebar-link">根据选择器获取元素</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#移入点击" class="sidebar-link">移入点击</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#数组去重" class="sidebar-link">数组去重</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#获取网页部分" class="sidebar-link">获取网页部分</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#innertext与innerhtml" class="sidebar-link">innerText与innerHTML</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#appendchild-添加子元素" class="sidebar-link">appendChild 添加子元素</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#insertbefore-插入子元素" class="sidebar-link">insertBefore 插入子元素</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#window对象的三个事件-oload-onbefpreunload-onunload" class="sidebar-link">window对象的三个事件,oload ,onbefpreunload,onunload</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#location对象跳转" class="sidebar-link">location对象跳转</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#history对象-页面回退-前进" class="sidebar-link">history对象  页面回退,前进</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#navigator对象-获取浏览信息" class="sidebar-link">navigator对象 获取浏览信息</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#localstorage本地储存" class="sidebar-link">localStorage本地储存</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#sessionstorage-一次性储存" class="sidebar-link">sessionStorage 一次性储存</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#练习题-去掉数组" class="sidebar-link">练习题,去掉数组 -</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#定时器-setinterval永久定时器" class="sidebar-link">定时器---setInterval永久定时器</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#定时器-settimeout-一次性定时器" class="sidebar-link">定时器---setTimeout 一次性定时器</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#offsewidth与offsetheight-与offsetparent与offsetleft与offsettop" class="sidebar-link">offseWidth与offSetHeight 与offsetParent与offsetLeft与offsetTop</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#事件冒泡" class="sidebar-link">事件冒泡</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#事件冒泡的好处" class="sidebar-link">事件冒泡的好处</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#阻止事件冒泡" class="sidebar-link">阻止事件冒泡</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/frontend/javascript/javascript%E4%B8%AD%E7%BA%A7.html#事件捕获" class="sidebar-link">事件捕获</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><hr> <h1 id="javascript阶段webapi知识"><a href="#javascript阶段webapi知识" class="header-anchor">#</a> javascript阶段webapi知识</h1> <h2 id="根据id获取元素"><a href="#根据id获取元素" class="header-anchor">#</a> 根据ID获取元素</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//根据HTML标签中的ID名获取元素</span>
+<span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">&quot;k&quot;</span><span class="token operator">&gt;</span>我<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+
+<span class="token keyword">var</span> k <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'k'</span><span class="token punctuation">)</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> banzhang<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//对象  打印object</span>
+        
+        <span class="token comment">//2.如果没有这个ID元素，则返回null</span>
+
+</code></pre></div><h2 id="根据标签获取元素"><a href="#根据标签获取元素" class="header-anchor">#</a> 根据标签获取元素</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>ul id<span class="token operator">=</span><span class="token string">&quot;banzhang&quot;</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>我是班长<span class="token number">1</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li id<span class="token operator">=</span><span class="token string">&quot;li2&quot;</span><span class="token operator">&gt;</span>我是班长<span class="token number">2</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>我是班长<span class="token number">3</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>我是班长<span class="token number">4</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>我是班长<span class="token number">5</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
+    
+    <span class="token keyword">var</span> liList <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>liList<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">/* 如果想要获取某个具体的元素对象，可以通过数组下标获取 */</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>liList<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">/* 伪数组不能调用数组api */</span>
+        <span class="token comment">// liList.resverse();</span>
+        
+        <span class="token comment">//2.如果没有标签名，则获取空数组</span>
+        <span class="token keyword">var</span> aList <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>aList<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+        <span class="token comment">//3.如果不想获取页面所有的标签名元素，只想获取某个父元素下的标签名元素</span>
+        <span class="token comment">//可以用父元素来调用getElementsByTagName()</span>
+        <span class="token keyword">var</span> banzhang <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'banzhang'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">//获取banzhang里面的li元素</span>
+        <span class="token keyword">var</span> liList1 <span class="token operator">=</span> banzhang<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>liList1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+        <span class="token comment">/* 父元素不能来调用getElementById */</span>
+        <span class="token comment">// banzhang.getElementById('li2');/* id具有唯一性 */</span>
+
+        <span class="token comment">/* 
+        1.如果是document来调用getElementsByTagName，获取页面所有的标签名元素
+        2.如果是父元素来调用getElementsByTagName，获取父元素里面的标签名元素
+        3.id只能是document来调用，因为具有唯一性
+        4.如果Element后面有s，表示获取的就是数组，可以被父元素来调用
+         */</span>
+    
+</code></pre></div><h2 id="根据name属性获取input元素"><a href="#根据name属性获取input元素" class="header-anchor">#</a> 根据name属性获取input元素</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>表单元素有一个独有的name默认属性  <span class="token operator">--</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;text&quot;</span> name<span class="token operator">=</span><span class="token string">&quot;user&quot;</span> value<span class="token operator">=</span><span class="token string">&quot;请输入用户&quot;</span><span class="token operator">&gt;</span>
+    
+     <span class="token keyword">var</span> userList <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByName</span><span class="token punctuation">(</span><span class="token string">'sex'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="根据选择器获取元素"><a href="#根据选择器获取元素" class="header-anchor">#</a> 根据选择器获取元素</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//querySelector:只会获取满足选择器条件的第一个元素</span>
+ <span class="token comment">//querySelectorAll：会获取满足选择条件的所有元素</span>
+        <span class="token keyword">var</span> box <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.one'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>box<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+         <span class="token keyword">var</span> oneList <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'.one'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>oneList<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="移入点击"><a href="#移入点击" class="header-anchor">#</a> 移入点击</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//移入</span>
+        b<span class="token punctuation">.</span><span class="token function-variable function">onmouseover</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'班长要和组长交流'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token operator">/</span>鼠标双击的时候 double
+        k<span class="token punctuation">.</span><span class="token function-variable function">ondblclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'我要双击了'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>      
+
+<span class="token comment">//2.2 双标签文字： innerText </span>
+        box<span class="token punctuation">.</span>innerText <span class="token operator">=</span> <span class="token string">'我是双标签文字'</span><span class="token punctuation">;</span><span class="token comment">//修改box中的内容</span>
+</code></pre></div><h2 id="数组去重"><a href="#数组去重" class="header-anchor">#</a> 数组去重</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">25</span><span class="token punctuation">,</span><span class="token number">88</span><span class="token punctuation">,</span><span class="token number">66</span><span class="token punctuation">,</span><span class="token number">90</span><span class="token punctuation">,</span><span class="token number">25</span><span class="token punctuation">,</span><span class="token number">88</span><span class="token punctuation">,</span><span class="token number">66</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//[20,25,66,88,90]</span>
+
+
+        <span class="token comment">//1.冒泡法</span>
+        <span class="token comment">//1.1 先对数组排序arr</span>
+        <span class="token comment">//1.2 声明新数组存储去重后的数组newArr</span>
+        <span class="token comment">//1.3 遍历arr，检查每一个元素与相邻的元素是否相等。相等，说明重复。 不等，没有重复就添加</span>
+
+        <span class="token comment">//1.1 先对数组排序arr</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>arr<span class="token punctuation">.</span>length<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>arr<span class="token punctuation">.</span>length<span class="token operator">-</span><span class="token number">1</span><span class="token operator">-</span>i<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">&gt;</span> arr<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token keyword">var</span> temp <span class="token operator">=</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+                    arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+                    arr<span class="token punctuation">[</span>j<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token number">20</span> <span class="token number">25</span> <span class="token number">25</span> <span class="token number">66</span> <span class="token number">66</span> <span class="token number">88</span> <span class="token number">88</span> <span class="token number">90</span>
+        
+        <span class="token comment">//1.2 声明新数组存储去重后的数组newArr</span>
+        <span class="token keyword">var</span> newArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token comment">//1.3 遍历arr，检查每一个元素与相邻的元素是否相等。相等，说明重复。 不等，没有重复就添加</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> arr<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                newArr<span class="token punctuation">[</span>newArr<span class="token punctuation">.</span>length<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>newArr<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token number">20</span> <span class="token number">25</span> <span class="token number">66</span> <span class="token number">88</span> <span class="token number">90</span>
+
+
+        <span class="token number">2.</span>开关思想
+        <span class="token comment">/* 
+        1.声明newArr存储去重后的数组
+        2.遍历arr，检查arr[i]在不在
+        3.根据结果： 在：不添加  不在：添加
+         */</span>
+
+        <span class="token comment">//1.声明newArr存储去重后的数组</span>
+         <span class="token keyword">var</span> newArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token comment">//2.遍历arr，检查arr[i]在不在</span>
+         <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment">/*开关思想：某种操作结果只有两种情况
+            a, var buZai = true;
+            b. 验证假设
+            c。根据开关结果实现需求 
+             */</span>
+             <span class="token keyword">var</span> buZai <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+             <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>j <span class="token operator">&lt;</span> newArr<span class="token punctuation">.</span>length<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                 <span class="token keyword">if</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> newArr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                     buZai <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+                 <span class="token punctuation">}</span>
+             <span class="token punctuation">}</span><span class="token punctuation">;</span>
+             <span class="token keyword">if</span><span class="token punctuation">(</span>buZai<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                 <span class="token comment">//没有重复</span>
+                 newArr<span class="token punctuation">[</span>newArr<span class="token punctuation">.</span>length<span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+             <span class="token punctuation">}</span>
+         <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>newArr<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token number">20</span> <span class="token number">25</span> <span class="token number">66</span> <span class="token number">88</span> <span class="token number">90</span>
+</code></pre></div><h2 id="获取网页部分"><a href="#获取网页部分" class="header-anchor">#</a> 获取网页部分</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//2.网页主要由四个部分组成：    元素节点    属性节点     文本节点   注释节点</span>
+<span class="token comment">//3.网页内容  ——&gt; 一切皆节点Node</span>
+
+<span class="token number">4.</span><span class="token function">节点主要是三部分组成：节点三要素</span>  <span class="token punctuation">(</span>可以让浏览器准确的渲染页面内容<span class="token punctuation">)</span>
+        节点类型：nodeType
+        节点名称：nodeName
+        节点值： nodeValue
+
+
+        <span class="token number">1.</span>元素节点
+            节点类型： nodeType      <span class="token number">1</span>
+            	<span class="token comment">//console.log(box.nodeType);//1</span>
+            节点名称：nodeName      标签名大写
+            	<span class="token comment">// console.log(box.nodeName);//DIV</span>
+            节点值： nodeValue       <span class="token keyword">null</span>
+             	<span class="token comment">//console.log(box.nodeValue);//null</span>
+        
+        <span class="token number">2.</span>属性节点
+            节点类型： nodeType      <span class="token number">2</span>
+            节点名称：nodeName      属性名
+            节点值： nodeValue      属性值
+
+<span class="token comment">/* 本小节知识点： 文本节点与注释节点三要素
+
+        1.文本节点
+            节点类型： nodeType       3  
+            		console.log(ul1.childNodes[0].nodeType);
+            节点名称：nodeName       #text   
+            节点值： nodeValue      文字内容    
+        2.注释节点
+            节点类型： nodeType         8
+		         console.log(ul1.childNodes[1].nodeType);
+            节点名称：nodeName        #comment
+            节点值： nodeValue         注释内容
+
+        3.文档节点
+            节点类型： nodeType         9
+            		console.log(document.nodeType);
+            节点名称：nodeName        #document
+            节点值： nodeValue         null
+        
+         */</span>
+            
+            
+            		<span class="token number">03</span>
+ <span class="token comment">/*本小节的知识点：获取父元素的子节点与子元素
+        1。  获取子节点：  父元素.childNodes
+        2.   获取子元素：  父元素.children
+         */</span>
+
+         <span class="token keyword">var</span> ul1 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'ul1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+         <span class="token comment">//1.获取子节点（元素  文本  注释）</span>
+         <span class="token comment">//谷歌： 元素  文本（包含空文本）  注释</span>
+         <span class="token comment">//IE8： 元素  非空文本  注释</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>ul1<span class="token punctuation">.</span>childNodes<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+					<span class="token number">04</span>
+         <span class="token comment">//2.获取子元素（元素节点）</span>
+         <span class="token comment">//谷歌火狐： 元素</span>
+         <span class="token comment">//IE8：元素和注释</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>ul1<span class="token punctuation">.</span>children<span class="token punctuation">)</span><span class="token punctuation">;</span>
+         
+
+<span class="token operator">&lt;</span>ul id<span class="token operator">=</span><span class="token string">&quot;ul1&quot;</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>ewtshnbfdgnfdgnm gdff<span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+        我是班长
+        <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 我是班长的妹 <span class="token operator">--</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li id<span class="token operator">=</span><span class="token string">&quot;li1&quot;</span><span class="token operator">&gt;</span>我是班长<span class="token number">1</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li id<span class="token operator">=</span><span class="token string">&quot;li2&quot;</span><span class="token operator">&gt;</span>我是班长<span class="token number">2</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>我是班长<span class="token number">3</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>我是班长<span class="token number">4</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>我是班长<span class="token number">5</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
+
+			<span class="token number">05</span><span class="token operator">--</span>获取兄弟节点与兄弟元素
+<span class="token comment">/*本小节的知识点：获取兄弟节点与兄弟元素
+        1. 获取上一个元素与节点
+            上一个元素： 元素.previousElementSibling
+            上一个节点：    元素.previousSibling
+        2.获取下一个元素与节点 
+            下一个元素：  元素.nextElementSibling
+            下一个节点    元素.nextSibling
+         */</span>
+         <span class="token keyword">var</span> ul1 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'ul1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token keyword">var</span> li2 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'li2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//班长2</span>
+         <span class="token comment">//1.获取上一个元素与上一个节点</span>
+         <span class="token comment">//1.1 获取上一个节点</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>li2<span class="token punctuation">.</span>previousSibling<span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token comment">//1.2 获取上一个元素</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>li2<span class="token punctuation">.</span>previousElementSibling<span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token comment">//2.1 获取下一个节点</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>li2<span class="token punctuation">.</span>nextSibling<span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token comment">//2.2 获取下一个元素</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>li2<span class="token punctuation">.</span>nextElementSibling<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+				<span class="token number">06</span><span class="token operator">--</span>获取第一个子节点与子元素
+<span class="token comment">/*本小节的知识点：获取第一个子节点与子元素
+        1. 获取第一个子节点
+        2.取第一个子元素
+           
+         */</span>
+         <span class="token keyword">var</span> ul1 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'ul1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token comment">//1.获取第一个子节点</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>ul1<span class="token punctuation">.</span>firstChild<span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token comment">//2.获取第一个子元素</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>ul1<span class="token punctuation">.</span>firstElementChild<span class="token punctuation">)</span><span class="token punctuation">;</span>
+         
+				<span class="token number">07</span><span class="token operator">--</span>获取最后一个子节点与子元素
+<span class="token comment">/*本小节的知识点：获取最后一个子节点与子元素
+        1. 获取最后一个子节点  父元素.lastChild
+        2.获取最后一个子元素    父元素.lastElementChild
+         */</span>
+
+         <span class="token keyword">var</span> ul1 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'ul1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+         <span class="token comment">//1.获取最后一个子节点</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>ul1<span class="token punctuation">.</span>lastChild<span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token comment">//2.获取最后一个子元素</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>ul1<span class="token punctuation">.</span>lastElementChild<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+					<span class="token number">08</span><span class="token operator">--</span>获取父节点
+
+<span class="token comment">/*本小节的知识点：获取父节点
+           获取父节点： 子元素.parentNode
+         */</span>
+
+         <span class="token keyword">var</span> li2 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'li2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//获取元素的父节点：一定是元素  </span>
+        <span class="token comment">//因为只有元素才有儿子</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>li2<span class="token punctuation">.</span>parentNode<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>li2<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span>parentNode<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//body</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>li2<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span>parentNode<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//html</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>li2<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span>parentNode<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//document</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>li2<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span>parentNode<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//null</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>li2<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span>nextElementSibling<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//我爸爸的弟弟（叔叔）</span>
+</code></pre></div><h2 id="innertext与innerhtml"><a href="#innertext与innerhtml" class="header-anchor">#</a> innerText与innerHTML</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code> <span class="token comment">//3.1 innerText : 无法解析字符串中的标签，会把所有的东西都当作元素的文本</span>
+        <span class="token comment">// box.innerText = &quot;&lt;a&gt;我是链接&lt;/a&gt;&lt;p&gt;我是pp&lt;/p&gt;&quot;;</span>
+
+        <span class="token comment">//3.2 innerHTML:可以解析字符串中的标签</span>
+        <span class="token comment">//作用：动态给页面添加元素 类似于  document.write();</span>
+</code></pre></div><p>创建元素的三种方法</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//3.1 创建标签  (1)创建的是空标签  （2）只是在内存创建，需要手动添加到dom页面中</span>
+        <span class="token keyword">var</span> p <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'p'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//参数是标签名</span>
+        <span class="token comment">//3.2 设置属性</span>
+        p<span class="token punctuation">.</span>innerText <span class="token operator">=</span> <span class="token string">'我是新来的'</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//3.3 添加到页面 : 父元素.appendChild(子元素)</span>
+        document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="appendchild-添加子元素"><a href="#appendchild-添加子元素" class="header-anchor">#</a> appendChild 添加子元素</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/*   父元素.appendChild(子元素)
+
+    1.新创建的元素   :  则添加到最后面
+    2.已经存在的元素 : 则是移动到最后面
+    3.元素有子元素   : 则父元素和子元素一起移动到最后面
+     */</span>
+
+    <span class="token keyword">var</span> ul1 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'ul1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//1.新创建的元素</span>
+    <span class="token keyword">var</span> newLi <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    newLi<span class="token punctuation">.</span>innerText <span class="token operator">=</span><span class="token string">'我是新来的'</span><span class="token punctuation">;</span>
+    ul1<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>newLi<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+    <span class="token comment">//2.已经存在的原理</span>
+    <span class="token keyword">var</span> li3 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'li3'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    ul1<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>li3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//3.元素有子元素</span>
+    <span class="token keyword">var</span> ul2 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'ul2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    ul1<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>ul2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="insertbefore-插入子元素"><a href="#insertbefore-插入子元素" class="header-anchor">#</a> insertBefore 插入子元素</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>ul id<span class="token operator">=</span><span class="token string">&quot;ul1&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>隔壁老王<span class="token number">1</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>li id<span class="token operator">=</span><span class="token string">&quot;li2&quot;</span><span class="token operator">&gt;</span>隔壁老王<span class="token number">2</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>隔壁老王<span class="token number">3</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>隔壁老王<span class="token number">4</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>隔壁老王<span class="token number">5</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>ul id<span class="token operator">=</span><span class="token string">&quot;ul2&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>隔壁老张<span class="token number">1</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>隔壁老张<span class="token number">2</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>li id<span class="token operator">=</span><span class="token string">&quot;li3&quot;</span><span class="token operator">&gt;</span>隔壁老张<span class="token number">3</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>隔壁老张<span class="token number">4</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>隔壁老张<span class="token number">5</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
+
+
+<span class="token comment">/*   appendChild : 只能添加到最后面
+         insertBefore : 添加到指定位置
+
+    语法： 父元素.insertBefore(新元素,要插入哪个元素的前面)
+
+    1.新创建的元素   :   则添加到指定位置
+    2.已经存在的元素 :   则移动到指定位置
+    3.元素有子元素   :   则父元素和子元素一起移动到指定位置
+     */</span>
+
+    <span class="token keyword">var</span> ul1 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'ul1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> li2 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'li2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//班长2</span>
+
+    <span class="token comment">//1.新创建的元素</span>
+    <span class="token keyword">var</span> newLi <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    newLi<span class="token punctuation">.</span>innerText <span class="token operator">=</span> <span class="token string">'我是新来的'</span><span class="token punctuation">;</span>
+    ul1<span class="token punctuation">.</span><span class="token function">insertBefore</span><span class="token punctuation">(</span>newLi<span class="token punctuation">,</span>li2<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//newLi添加到li2的前面</span>
+
+    <span class="token comment">//2.已经存在的元素</span>
+    <span class="token keyword">var</span> li3 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'li3'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//老张3</span>
+    ul1<span class="token punctuation">.</span><span class="token function">insertBefore</span><span class="token punctuation">(</span>li3<span class="token punctuation">,</span>li2<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//li3插入到li2的前面</span>
+    
+
+    <span class="token comment">//3.元素有子元素</span>
+    <span class="token keyword">var</span> ul2 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'ul2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    ul1<span class="token punctuation">.</span><span class="token function">insertBefore</span><span class="token punctuation">(</span>ul2<span class="token punctuation">,</span>li2<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//ul2插入li2的前面</span>
+</code></pre></div><p>removeChild 移除子元素</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/*   
+    语法： 父元素.removeChild(子元素)
+
+    1.元素只能删除自己的子元素
+    2.父元素不能删除别人的子元素
+    3.元素不能自己删除自己
+
+     */</span>
+
+    <span class="token keyword">var</span> ul1 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'ul1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> li2 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'li2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//班长2</span>
+    <span class="token keyword">var</span> li3 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'li3'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//老张3</span>
+
+
+    <span class="token comment">//1.元素不能自杀:程序报错</span>
+    <span class="token comment">// li2.removeChild(li2);</span>
+
+    <span class="token comment">//2.元素不能移除别人的子元素</span>
+    <span class="token comment">// ul1.removeChild(li3);</span>
+
+    <span class="token comment">//3.元素只能删除自己的子元素（亲爸爸可以移除亲儿子）</span>
+    ul1<span class="token punctuation">.</span><span class="token function">removeChild</span><span class="token punctuation">(</span>li2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="window对象的三个事件-oload-onbefpreunload-onunload"><a href="#window对象的三个事件-oload-onbefpreunload-onunload" class="header-anchor">#</a> window对象的三个事件,oload ,onbefpreunload,onunload</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/*window对象三个事件：网页从打开到关闭的三个流程
+                onload：页面所有内容（包含外部资源路径）
+                onbeforeunload:页面即将关闭
+                onunload：页面正在关闭
+            
+ */</span>
+<span class="token comment">//页面所有内容加载完毕</span>
+window<span class="token punctuation">.</span><span class="token function-variable function">onliad</span><span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">//作用:可以获取网页任何元素</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//页面即将关闭</span>
+window<span class="token punctuation">.</span><span class="token function-variable function">onbeforeunload</span><span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">//作用:储存重要数据</span>
+    <span class="token comment">//挽留用户(IE8支持)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//页面正在关闭</span>
+window<span class="token punctuation">.</span><span class="token function-variable function">onunload</span><span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">//不能保存数据,这个方法已走完页面就关闭,内存被回收</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="location对象跳转"><a href="#location对象跳转" class="header-anchor">#</a> location对象跳转</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code> <span class="token comment">/*location:地址栏 
+            网址url组成部分：全球统一资源定位符
+
+            protocol：协议  http  https file
+            host主机 ：  主机名hostname（ip地址） + 端口号（port）
+            路径path:/
+            参数：search  ?
+            # : 锚点定位（资源定位符）
+         */</span>
+
+         <span class="token comment">/* 
+         assign：跳转网页
+         replace:替换网页
+         reload:刷新网页(F5)
+          */</span>
+document<span class="token punctuation">.</span><span class="token function">getElementByld</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span><span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">//跳转网页:可以回退</span>
+    location<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span><span class="token string">'http://www.itcast.cn'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//替代网页:不能回退</span>
+    location<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">'http://www.itcast.cn'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//刷新网页</span>
+    location<span class="token punctuation">.</span><span class="token function">reload</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="history对象-页面回退-前进"><a href="#history对象-页面回退-前进" class="header-anchor">#</a> history对象  页面回退,前进</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/* 
+        history:历史纪录
+
+            back():回退，上一页
+            forward():前进，下一页
+         */</span>
+document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'f'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function-variable function">onclock</span><span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">//没有跳转过就没有历史记录,无法跳转</span>
+    history<span class="token punctuation">.</span><span class="token function">forward</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="navigator对象-获取浏览信息"><a href="#navigator对象-获取浏览信息" class="header-anchor">#</a> navigator对象 获取浏览信息</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/*navigator:  获取浏览器信息（名字 版本 电脑系统）
+            用户数据统计: 大数据杀熟
+         */</span>
+
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>navigator<span class="token punctuation">)</span><span class="token punctuation">;</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>navigator<span class="token punctuation">.</span>userAgent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">//返回参数字符串的下标，如果不在则返回固定值-1</span>
+         <span class="token keyword">if</span><span class="token punctuation">(</span>navigator<span class="token punctuation">.</span>userAgent<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'Chrome'</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">//在</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'谷歌浏览器'</span><span class="token punctuation">)</span>
+         <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>navigator<span class="token punctuation">.</span>userAgent<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'Firefox'</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'火狐浏览器'</span><span class="token punctuation">)</span>
+         <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+             <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'IE等其他浏览器'</span><span class="token punctuation">)</span>
+         <span class="token punctuation">}</span>
+         
+        <span class="token comment">//判断用户浏览器品牌</span>
+
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>screen<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="localstorage本地储存"><a href="#localstorage本地储存" class="header-anchor">#</a> localStorage本地储存</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/* 
+        1.localStorage : 本地存储(存到硬盘，HP值无限)
+        
+        2.语法四个：增 删 改 查
+            增加数据：setItem('属性名',属性值)
+            获取数据：getItem('属性名')
+            移除数据：removeItem('属性名')
+            清空数据：clear()
+
+        3.注意点
+            a.存入的数据类型只能是字符串。如果不是编译器会自动调用toString()转成字符串
+            b.永久存储。就算你关闭浏览器也存在你的电脑中
+            
+ */</span>
+document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'btn1'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">//增加数据</span>
+            localStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">,</span><span class="token number">13515588888</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment">//获取数据</span>
+    		 <span class="token keyword">var</span> age <span class="token operator">=</span>  localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'age'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+           	  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//删除数据</span>
+    		 localStorage<span class="token punctuation">.</span><span class="token function">removeItem</span><span class="token punctuation">(</span><span class="token string">'girlFriends'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token comment">//清空数据</span>
+    		  localStorage<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token punctuation">}</span>
+
+
+</code></pre></div><h2 id="sessionstorage-一次性储存"><a href="#sessionstorage-一次性储存" class="header-anchor">#</a> sessionStorage 一次性储存</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/*1,locationStorage：永久存储（存储到硬盘中）
+     sessionStorage：一次性存储（存储到内存中，一旦浏览器关闭就不在了）*/</span>
+<span class="token comment">/*sessionStorage:浏览器本地储存
+				a.所有的语法作用与localStorage一致
+				b.唯一的区别就是HP值不一样
+*/</span>
+</code></pre></div><h2 id="练习题-去掉数组"><a href="#练习题-去掉数组" class="header-anchor">#</a> 练习题,去掉数组 -</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//需求：（1）去掉-  （2）-后面的单词首字母大写(从第二个开始)</span>
+        <span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">'get-element-by-id'</span><span class="token punctuation">;</span><span class="token comment">//getElementById</span>
+
+        <span class="token comment">//1.以指定分隔符分割字符串</span>
+        <span class="token keyword">var</span> arr <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'-'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//2.将数组中每一个元素拼成一个新的字符串</span>
+        <span class="token keyword">var</span> res <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">var</span> s <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//get element by id</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">//首字母不需要大写</span>
+                res <span class="token operator">+=</span> s<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><span class="token comment">//先转大写后添加</span>
+                res <span class="token operator">+=</span> s<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> s<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">toLocaleUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="定时器-setinterval永久定时器"><a href="#定时器-setinterval永久定时器" class="header-anchor">#</a> 定时器---setInterval永久定时器</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//定时器:让代码间隔时间执行</span>
+<span class="token keyword">var</span> p1<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'p1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> timeID <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span> <span class="token comment">//声明变量储存定时时器ID</span>
+document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'kai'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span><span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">/* 
+            定时器（计时器）:一段代码，间隔时间执行
+        */</span>
+            <span class="token comment">/**1.
+             * @description: 开启定时器
+             * @param {type} 第一个参数：一段代码
+             * @param {type} 第e二个参数：时间间隔   单位：毫秒 ms
+             * @return:timeID  一个页面可以开启很多个定时器，浏览器为了区分这些定时器，
+             每开一个定时器就会给你一个编号，称之为定时器ID
+             */</span>
+    timeID <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        consolg<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'haha'</span><span class="token punctuation">)</span>
+        
+        p1<span class="token punctuation">.</span>innerText<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token comment">//美一秒钟执行一次</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+document<span class="token punctuation">.</span><span class="token function">getElementByID</span><span class="token punctuation">(</span><span class="token string">'guan'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span><span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">//关闭定时器 参数:定时器ID</span>
+    <span class="token function">clearInterval</span><span class="token punctuation">(</span>timeID<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="定时器-settimeout-一次性定时器"><a href="#定时器-settimeout-一次性定时器" class="header-anchor">#</a> 定时器---setTimeout 一次性定时器</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code>        <span class="token comment">/* 定时器：让一段代码，间隔时间执行。
+
+        1.setInterval():永久定时器：一旦开启，永久重复执行，只能手动清除
+            清除定时器：clearInterval()
+        2.setTimeout():一次定时器            一旦开启，间隔时间只会执行一次。然后自动清除
+        
+         */</span>
+
+        <span class="token keyword">var</span> timeID <span class="token operator">=</span>  <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+             console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'3秒到了，开始呈现精彩内容'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+             
+         <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">3000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+         <span class="token comment">//setTimeout定时器也可以清除，但是用的不多</span>
+        <span class="token comment">//  clearTimeout(timeID);</span>
+</code></pre></div><h2 id="offsewidth与offsetheight-与offsetparent与offsetleft与offsettop"><a href="#offsewidth与offsetheight-与offsetparent与offsetleft与offsettop" class="header-anchor">#</a> offseWidth与offSetHeight 与offsetParent与offsetLeft与offsetTop</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token number">01</span>
+<span class="token comment">/* offset家族：获取元素真实的宽高与位置
+
+    offsetWidth / offsetHeight
+    offsetParent
+    offsetLeft / offsetTop
+     */</span>
+
+    <span class="token comment">/*1.点语法操作元素宽高的特点 
+        a.只能获取行内，无法获取行外
+        b.获取的是string，带单位
+        c.获取的只是width和height属性值（你写的是什么，获取的就是什么）
+        d.既可以获取，也可以修改
+     */</span>
+
+ <span class="token comment">/* offsetParent:获取的是元素最近的定位父级(定位参考的父元素)
+            parentNode：获取的是DOM树中的父节点（固定）
+    
+     */</span>
+    <span class="token keyword">var</span> box <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'box'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>box<span class="token punctuation">.</span>offsetParent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+     <span class="token comment">//1.如果元素的定位是固定定位（fixed），则定位父级是null</span>
+     <span class="token comment">//2.如果元素的定位是非固定位（绝对 相对），并且元素所有的父元素都没有定位，此时定位父级body</span>
+     <span class="token comment">//3.body定位父级是null</span>
+
+     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>offsetParent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token number">03</span>
+<span class="token comment">/*offsetLeft/Top: 获取元素真实的位置
+         offsetLeft: 左外边框  距离  定位父级 左内边框的距离
+         offsetTop:  上外边框  距离  定位父级 上内边框的距离
+        
+         */</span>
+
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>box<span class="token punctuation">.</span>offsetLeft<span class="token punctuation">,</span>box<span class="token punctuation">.</span>offsetTop<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="事件冒泡"><a href="#事件冒泡" class="header-anchor">#</a> 事件冒泡</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//1,事件冒泡: 如果一个元素的事件被触发,所以的父级元素同名事件会依次触发</span>
+<span class="token comment">//		元素 --&gt; 父级元素 --&gt; body --&gt; html --&gt;document --&gt; window</span>
+<span class="token comment">//2,事件冒泡一直都存在,只是以前没有给父级元素注册同名事件而已</span>
+document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'btn'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'我是小按钮'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'box'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'我是骚粉的大盒子'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'我是body'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'我是html'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    document<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'我是document'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    window<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'我是window'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="事件冒泡的好处"><a href="#事件冒泡的好处" class="header-anchor">#</a> 事件冒泡的好处</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/*
+1,事件冒泡的好处: 如果一个父元素中所有的子元素都需要注册同名事件,则只需要给父元素注册即可
+2.关于事件对象的一些好处
+		this:谁调用我,我就是谁
+		currentTarget: 就是this,但是少用,因为有兼容性,而this没有
+		e.target: 事件触发源,触发这个事件真正的源头
+		
+
+*/</span>
+ <span class="token comment">//需求：给页面每一个li元素注册点击事件，点击之后弹窗显示文本</span>
+
+        <span class="token comment">//1.以前的做法</span>
+
+        <span class="token comment">// //(1)获取li元素</span>
+        <span class="token comment">// var liList = document.getElementsByTagName('li');</span>
+        <span class="token comment">// //(2)遍历数组，给每一个li元素注册点击事件</span>
+        <span class="token comment">// for(var i = 0;i&lt;liList.length;i++){</span>
+        <span class="token comment">//     liList[i].onclick = function(){</span>
+        <span class="token comment">//         //this:谁调用我，我就代表谁</span>
+        <span class="token comment">//         //this:当前点击的li元素</span>
+        <span class="token comment">//         alert(this.innerText);</span>
+        <span class="token comment">//     };</span>
+        <span class="token comment">// };</span>
+
+<span class="token operator">&lt;</span>ul id<span class="token operator">=</span><span class="token string">&quot;ul1&quot;</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>我是班长<span class="token number">1</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>我是班长<span class="token number">2</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>我是班长<span class="token number">3</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>我是班长<span class="token number">4</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>我是班长<span class="token number">5</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>我是班长<span class="token number">6</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
+
+        <span class="token comment">//2.使用事件冒泡：只需要给父元素注册即可</span>
+            <span class="token keyword">var</span> ul1 <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'ul1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            ul1<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token comment">//this:谁调用我，我就代表谁</span>
+                <span class="token comment">//this:ul</span>
+                <span class="token comment">// alert(this.innerText);</span>
+
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>currentTarget <span class="token operator">===</span> <span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                
+
+                <span class="token comment">//如何知道到底是点击哪一个li元素触发的父元素ul的事件呢？</span>
+                <span class="token comment">//事件触发源：触发这个事件真正的源头</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token function">alert</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>innerText<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="阻止事件冒泡"><a href="#阻止事件冒泡" class="header-anchor">#</a> 阻止事件冒泡</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/*
+1, 事件冒泡: 如果一个元素的事件被触发,所有的父级元素同名会依次触发
+		元素 -&gt; 父元素 -&gt; body -&gt; html -&gt; document -&gt;window
+2,事件冒泡一直存在,只是以前没有给父元素注册同名事件而已
+
+3,阻止事件冒泡: 只触发当前元素的事件,不触发父级元素的同名事件
+		谷歌火狐: e.stopPropagation()
+		IE8:	 e.cancelBubble = true
+
+4,注意点: 要想阻止事件冒泡,一定要先获取事件对象
+*/</span>
+
+ document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'btn'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'我是小按钮'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'box'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'我是骚粉的大盒子'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// e.stopPropagation();</span>
+
+        <span class="token comment">//IE8: 需要设置事件对象的一个属性为true</span>
+        e <span class="token operator">=</span> e  <span class="token operator">||</span> window<span class="token punctuation">.</span>event<span class="token punctuation">;</span>
+        e<span class="token punctuation">.</span>cancelBubble <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>           <span class="token comment">//当这里阻止事件冒泡</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'我是body'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'我是html'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="事件捕获"><a href="#事件捕获" class="header-anchor">#</a> 事件捕获</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/*1. 事件冒泡：  如果一个元素的事件被触发，所有的父级元素同名事件会依次触发
+
+            元素 -&gt; 父元素 -&gt; body -&gt; html -&gt; document -&gt;window
+      1. 事件冒泡一直都存在，只是以前没有给父元素注册同名事件而已
+
+      3.事件捕获：  如果一个元素的事件被触发。先从最顶级父元素window一级一级往下触发，直到目标元素。
+            window -&gt; document -&gt; html -&gt; body -&gt; 父元素 -&gt; 元素
+      4.要想注册捕获事件，只有唯一的一种方式  addEventListener注册并且第三个参数一定为true
+        * 除此之外所有的方式注册事件都是冒泡：点语法  addEvenetListener第三个参数false
+
+      5.IE没有捕获
+
+      6.阻止冒泡一样可以阻止捕获
+    
+     */</span>
+    document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'btn'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'我是小按钮'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//捕获</span>
+
+    document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'box'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'我是骚粉的大盒子'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'我是body'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'我是html'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        e<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'我是document'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+   window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'我是window'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.09f1ad5d.js" defer></script><script src="/docs/assets/js/2.a39484a0.js" defer></script><script src="/docs/assets/js/12.77f99ea2.js" defer></script>
+  </body>
+</html>
